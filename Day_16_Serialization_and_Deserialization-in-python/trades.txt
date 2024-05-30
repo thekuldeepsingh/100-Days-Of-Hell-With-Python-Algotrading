@@ -1,1 +1,0 @@
-{'name': 'Kuldeep', 'City': 'Singapore', 'Country': 'Bharat(India)'}
