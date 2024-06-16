@@ -1,0 +1,1051 @@
+Ticker,Company Name,Sector,Industry,Market Cap (B),EPS,P/E Ratio,Dividend Yield (%),P/B Ratio,D/E Ratio
+AAPL,Apple Inc.,Technology,Semiconductors,458.13,-9.78,44.16,2.19,9.17,2.56
+GOOGL,Alphabet Inc.,Finance,Investment Services,215.85,4.86,27.56,8.14,14.93,0.06
+MSFT,Microsoft Corporation,Finance,Banks,276.46,5.09,6.73,0.27,1.76,1.31
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,349.4,-0.53,28.3,5.92,15.4,0.27
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,248.55,9.92,27.04,2.2,10.2,0.12
+FB,"Meta Platforms, Inc.",Consumer Goods,Beverages,38.34,-3.87,22.22,4.93,0.43,0.25
+BRK.B,Berkshire Hathaway Inc.,Technology,Hardware,,-4.01,,6.92,8.03,0.08
+JNJ,Johnson & Johnson,Technology,Semiconductors,19.24,-6.46,,4.99,15.97,0.18
+JPM,JPMorgan Chase & Co.,Finance,Banks,260.95,0.21,21.25,7.18,12.03,1.52
+V,Visa Inc.,Finance,Investment Services,104.66,-3.76,10.24,4.57,19.69,1.54
+AAPL,Apple Inc.,Finance,Banks,173.47,9.4,40.14,2.83,11.32,1.21
+GOOGL,Alphabet Inc.,Finance,Banks,427.97,5.08,20.55,4.35,13.86,2.43
+MSFT,Microsoft Corporation,Utilities,Gas Utilities,38.24,8.6,22.84,9.22,1.61,2.15
+AMZN,"Amazon.com, Inc.",Consumer Goods,Beverages,,0.05,36.77,5.7,,2.39
+TSLA,"Tesla, Inc.",Finance,Banks,147.96,-9.68,40.41,3.11,,0.12
+FB,"Meta Platforms, Inc.",Healthcare,Pharmaceuticals,258.41,-6.35,,9.97,19.39,2.33
+BRK.B,Berkshire Hathaway Inc.,Energy,Oil & Gas,484.27,8.97,13.7,9.01,2.92,
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,206.74,4.01,35.7,6.76,,0.83
+JPM,JPMorgan Chase & Co.,Healthcare,Biotechnology,157.02,4.02,46.94,4.59,4.96,2.75
+V,Visa Inc.,Energy,Oil & Gas,371.84,-5.94,14.09,6.96,,
+AAPL,Apple Inc.,Consumer Goods,Food Products,225.94,,30.86,6.19,18.69,0.49
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,,-1.13,31.89,0.32,9.44,1.69
+MSFT,Microsoft Corporation,Technology,Software,277.68,0.61,8.1,6.34,5.81,0.31
+AMZN,"Amazon.com, Inc.",Technology,Semiconductors,246.44,,9.35,8.01,10.84,0.47
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,86.96,-7.81,28.22,,1.9,0.85
+FB,"Meta Platforms, Inc.",Finance,Insurance,413.16,-7.45,,6.09,13.55,2.09
+BRK.B,Berkshire Hathaway Inc.,Technology,Hardware,,0.3,44.06,9.97,15.6,1.84
+JNJ,Johnson & Johnson,Industrial Goods,Aerospace,380.16,-5.19,35.78,2.95,0.28,1.9
+JPM,JPMorgan Chase & Co.,Consumer Goods,Household Products,393.77,-8.52,23.32,3.37,15.73,1.23
+V,Visa Inc.,Consumer Goods,Beverages,449.45,-8.64,18.59,3.2,,0.51
+AAPL,Apple Inc.,Finance,Investment Services,308.99,7.63,10.92,7.97,2.47,1.22
+GOOGL,Alphabet Inc.,Finance,Insurance,107.73,-3.28,43.13,3.86,10.76,
+MSFT,Microsoft Corporation,Finance,Banks,160.42,9.24,31.54,7.87,1.0,0.32
+AMZN,"Amazon.com, Inc.",Energy,Coal,298.4,4.34,49.01,8.07,,2.13
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,204.28,2.96,8.53,3.45,18.82,0.09
+FB,"Meta Platforms, Inc.",Energy,Oil & Gas,106.18,2.43,23.87,5.04,19.04,1.26
+BRK.B,Berkshire Hathaway Inc.,Finance,Banks,,2.03,48.57,8.55,4.2,2.32
+JNJ,Johnson & Johnson,Healthcare,Pharmaceuticals,356.88,3.25,,1.42,4.54,0.82
+JPM,JPMorgan Chase & Co.,Industrial Goods,Aerospace,445.05,9.31,14.11,7.05,16.85,1.62
+V,Visa Inc.,Healthcare,Biotechnology,344.38,-7.2,21.13,9.06,11.39,
+AAPL,Apple Inc.,Utilities,Water Utilities,273.18,-8.76,44.64,1.42,13.51,1.17
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,,2.31,40.51,9.49,7.6,1.73
+MSFT,Microsoft Corporation,Consumer Goods,Food Products,395.1,-5.51,16.96,0.94,10.73,1.49
+AMZN,"Amazon.com, Inc.",Energy,Coal,,-8.08,5.59,4.69,14.65,1.37
+TSLA,"Tesla, Inc.",Consumer Goods,Beverages,268.22,0.92,,2.5,0.19,1.19
+FB,"Meta Platforms, Inc.",Finance,Investment Services,326.6,4.18,46.8,3.37,,2.18
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,,2.03,7.2,3.2,7.96,0.74
+JNJ,Johnson & Johnson,Finance,Banks,170.21,-6.46,47.27,3.16,16.03,2.15
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,135.89,4.82,40.03,8.31,6.33,2.04
+V,Visa Inc.,Energy,Oil & Gas,38.88,2.36,43.19,0.21,1.42,1.37
+AAPL,Apple Inc.,Healthcare,Pharmaceuticals,171.88,,7.38,3.65,1.04,0.31
+GOOGL,Alphabet Inc.,Industrial Goods,Construction,364.78,-9.84,38.04,1.31,4.64,0.36
+MSFT,Microsoft Corporation,Consumer Goods,Household Products,94.03,1.31,7.28,8.01,8.85,2.1
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,,1.44,23.91,,18.95,2.86
+TSLA,"Tesla, Inc.",Industrial Goods,Aerospace,456.04,-7.16,14.51,6.05,10.08,0.9
+FB,"Meta Platforms, Inc.",Healthcare,Biotechnology,90.4,4.9,,2.4,4.01,1.66
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,102.33,-7.18,32.53,2.24,12.82,2.92
+JNJ,Johnson & Johnson,Technology,Semiconductors,300.52,-7.76,40.56,,0.5,2.31
+JPM,JPMorgan Chase & Co.,Healthcare,Medical Devices,484.39,,24.17,,3.15,1.43
+V,Visa Inc.,Consumer Goods,Food Products,341.65,3.11,30.0,2.93,12.46,1.23
+AAPL,Apple Inc.,Finance,Banks,198.2,3.81,38.3,5.1,,2.87
+GOOGL,Alphabet Inc.,Industrial Goods,Aerospace,393.18,-6.8,21.13,2.33,,1.74
+MSFT,Microsoft Corporation,Utilities,Water Utilities,413.42,9.94,37.72,,,2.92
+AMZN,"Amazon.com, Inc.",Energy,Coal,496.82,-6.33,,1.55,10.85,0.24
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,55.68,6.86,48.5,7.13,8.44,2.85
+FB,"Meta Platforms, Inc.",Finance,Investment Services,373.87,,43.82,1.55,9.81,1.43
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Biotechnology,486.38,4.88,8.03,1.68,16.45,
+JNJ,Johnson & Johnson,Energy,Oil & Gas,93.42,6.81,42.8,2.36,6.43,2.11
+JPM,JPMorgan Chase & Co.,Energy,Oil & Gas,408.84,-0.49,38.2,0.19,18.52,2.32
+V,Visa Inc.,Utilities,Gas Utilities,229.51,-4.68,24.53,2.26,7.06,1.96
+AAPL,Apple Inc.,Technology,Semiconductors,100.4,-8.7,37.67,3.8,17.7,0.76
+GOOGL,Alphabet Inc.,Utilities,Gas Utilities,257.07,0.69,43.98,3.04,15.98,2.91
+MSFT,Microsoft Corporation,Industrial Goods,Construction,219.65,-8.41,33.01,,7.71,1.18
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,,-5.9,48.84,6.93,11.27,1.1
+TSLA,"Tesla, Inc.",Energy,Coal,,8.01,26.29,8.57,18.55,0.28
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,484.04,,46.27,1.09,4.84,0.7
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,300.93,-0.99,,1.84,8.07,0.21
+JNJ,Johnson & Johnson,Technology,Software,100.87,-4.05,9.95,3.7,7.44,2.42
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,469.0,-4.31,,6.55,16.91,0.76
+V,Visa Inc.,Utilities,Gas Utilities,43.88,-0.09,,8.97,6.81,
+AAPL,Apple Inc.,Utilities,Gas Utilities,109.51,-6.3,43.7,9.45,,2.29
+GOOGL,Alphabet Inc.,Finance,Investment Services,316.0,-7.79,25.8,9.15,4.18,
+MSFT,Microsoft Corporation,Finance,Banks,339.93,4.05,48.43,4.54,12.69,1.62
+AMZN,"Amazon.com, Inc.",Energy,Oil & Gas,121.31,-6.17,11.38,4.53,0.54,1.34
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,348.64,8.52,37.04,4.1,0.32,2.38
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,428.28,0.34,15.43,0.14,13.1,1.48
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,286.4,1.16,42.17,1.84,15.06,2.28
+JNJ,Johnson & Johnson,Consumer Goods,Beverages,312.77,6.74,7.77,9.72,2.02,1.54
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,481.44,-1.17,17.05,0.6,14.69,1.85
+V,Visa Inc.,Finance,Insurance,159.26,0.18,10.51,3.02,6.23,
+AAPL,Apple Inc.,Industrial Goods,Construction,391.47,5.18,40.92,9.54,15.93,1.22
+GOOGL,Alphabet Inc.,Finance,Banks,31.68,7.77,,5.87,16.83,
+MSFT,Microsoft Corporation,Finance,Insurance,285.68,8.29,,8.02,7.87,2.23
+AMZN,"Amazon.com, Inc.",Energy,Oil & Gas,25.56,3.87,30.05,4.18,11.55,2.21
+TSLA,"Tesla, Inc.",Utilities,Electric Utilities,325.21,4.35,40.45,7.34,9.09,0.48
+FB,"Meta Platforms, Inc.",Finance,Insurance,490.07,9.96,44.84,0.8,,1.6
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Manufacturing,253.43,5.09,13.51,9.46,6.92,0.9
+JNJ,Johnson & Johnson,Finance,Investment Services,,5.49,,7.6,19.59,1.29
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,411.01,-1.59,45.51,0.8,16.82,2.49
+V,Visa Inc.,Healthcare,Biotechnology,69.55,-0.62,49.95,,18.96,2.47
+AAPL,Apple Inc.,Finance,Insurance,395.59,-4.02,11.07,4.23,1.91,0.79
+GOOGL,Alphabet Inc.,Industrial Goods,Construction,98.79,2.05,25.19,0.39,5.57,0.06
+MSFT,Microsoft Corporation,Healthcare,Medical Devices,215.45,3.37,18.87,2.09,7.82,1.82
+AMZN,"Amazon.com, Inc.",Utilities,Water Utilities,162.11,9.58,8.85,7.22,3.54,
+TSLA,"Tesla, Inc.",Technology,Hardware,113.7,4.24,37.98,0.21,,2.67
+FB,"Meta Platforms, Inc.",Healthcare,Biotechnology,146.22,-9.09,40.16,0.39,6.24,1.72
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Beverages,316.79,3.13,26.25,1.56,0.25,1.03
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,367.1,5.7,34.23,4.38,19.01,2.13
+JPM,JPMorgan Chase & Co.,Utilities,Gas Utilities,261.19,1.05,44.63,9.21,16.5,0.2
+V,Visa Inc.,Energy,Renewable Energy,6.78,-1.23,6.8,6.1,,2.7
+AAPL,Apple Inc.,Technology,Hardware,371.87,7.52,10.35,7.6,13.14,0.7
+GOOGL,Alphabet Inc.,Industrial Goods,Aerospace,354.57,1.76,,0.12,13.79,0.96
+MSFT,Microsoft Corporation,Healthcare,Pharmaceuticals,349.72,-3.49,24.66,2.08,,1.19
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,478.24,4.11,,2.07,17.17,0.57
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,214.48,3.53,41.8,5.14,5.53,
+FB,"Meta Platforms, Inc.",Energy,Coal,,,17.12,4.92,14.38,1.55
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,450.7,-9.57,11.98,6.24,1.41,1.93
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,358.67,-6.0,25.7,2.65,9.09,2.31
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,185.78,3.71,19.42,5.59,5.66,0.5
+V,Visa Inc.,Industrial Goods,Aerospace,175.38,8.32,22.62,8.21,,0.14
+AAPL,Apple Inc.,Energy,Coal,60.1,,17.36,5.32,1.42,
+GOOGL,Alphabet Inc.,Technology,Hardware,234.79,7.05,5.57,2.98,19.92,1.28
+MSFT,Microsoft Corporation,Healthcare,Pharmaceuticals,166.14,1.56,,9.35,,2.99
+AMZN,"Amazon.com, Inc.",Technology,Semiconductors,304.23,0.44,28.35,3.86,9.43,1.91
+TSLA,"Tesla, Inc.",Technology,Semiconductors,399.26,-6.43,8.5,8.37,19.52,0.26
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,80.05,2.97,36.59,5.04,2.98,2.53
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,364.11,,32.95,0.19,7.18,0.3
+JNJ,Johnson & Johnson,Utilities,Water Utilities,153.03,-3.7,,5.59,17.76,1.24
+JPM,JPMorgan Chase & Co.,Industrial Goods,Aerospace,96.73,-4.47,47.49,0.86,10.99,1.57
+V,Visa Inc.,Healthcare,Pharmaceuticals,358.43,1.56,,3.85,18.03,2.46
+AAPL,Apple Inc.,Consumer Goods,Household Products,451.19,-2.43,6.31,7.33,,1.63
+GOOGL,Alphabet Inc.,Energy,Coal,402.82,-0.27,42.57,,,2.7
+MSFT,Microsoft Corporation,Finance,Banks,204.87,1.28,21.8,7.75,17.7,
+AMZN,"Amazon.com, Inc.",Energy,Oil & Gas,56.49,-6.88,49.2,3.17,11.73,0.82
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,323.13,-7.68,9.17,6.6,10.97,
+FB,"Meta Platforms, Inc.",Energy,Renewable Energy,,1.76,,7.0,,2.82
+BRK.B,Berkshire Hathaway Inc.,Utilities,Gas Utilities,220.15,3.4,,9.49,3.67,2.03
+JNJ,Johnson & Johnson,Consumer Goods,Beverages,358.66,-4.99,31.59,,,2.19
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,289.92,6.81,22.1,,14.31,2.79
+V,Visa Inc.,Technology,Semiconductors,233.24,0.61,38.93,7.79,12.89,2.82
+AAPL,Apple Inc.,Industrial Goods,Manufacturing,,-7.25,24.77,1.47,18.04,2.42
+GOOGL,Alphabet Inc.,Finance,Investment Services,125.24,5.17,18.47,8.06,10.73,2.38
+MSFT,Microsoft Corporation,Technology,Hardware,380.41,,25.45,1.85,3.92,0.3
+AMZN,"Amazon.com, Inc.",Energy,Coal,450.77,-7.29,,2.71,9.5,1.94
+TSLA,"Tesla, Inc.",Healthcare,Medical Devices,399.03,-2.71,,4.04,11.15,0.09
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,264.85,-2.26,36.53,5.84,1.73,1.93
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Biotechnology,361.9,6.28,27.73,3.99,18.32,0.69
+JNJ,Johnson & Johnson,Technology,Hardware,298.74,-9.86,6.54,1.47,3.83,2.3
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,432.22,9.13,10.65,0.97,16.09,2.6
+V,Visa Inc.,Technology,Semiconductors,241.9,9.13,42.79,9.42,16.15,
+AAPL,Apple Inc.,Consumer Goods,Beverages,482.78,-0.76,43.47,4.65,13.25,0.07
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,49.07,,,7.95,8.1,2.0
+MSFT,Microsoft Corporation,Finance,Investment Services,379.45,8.3,47.0,5.96,,0.43
+AMZN,"Amazon.com, Inc.",Utilities,Water Utilities,447.19,-8.69,28.91,1.36,13.28,2.38
+TSLA,"Tesla, Inc.",Finance,Banks,31.52,,21.48,4.7,11.25,2.98
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,251.0,4.92,27.25,1.28,11.44,1.48
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Construction,475.2,2.99,,5.32,12.58,
+JNJ,Johnson & Johnson,Technology,Software,459.35,-1.63,43.47,5.64,14.2,
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,290.46,6.21,6.63,5.67,7.5,2.68
+V,Visa Inc.,Finance,Investment Services,496.26,6.19,11.19,3.11,12.54,2.65
+AAPL,Apple Inc.,Energy,Renewable Energy,286.02,8.98,,4.36,10.05,2.09
+GOOGL,Alphabet Inc.,Healthcare,Biotechnology,213.8,-0.31,35.91,7.74,14.78,1.02
+MSFT,Microsoft Corporation,Consumer Goods,Food Products,303.76,3.32,8.45,9.34,11.98,2.79
+AMZN,"Amazon.com, Inc.",Industrial Goods,Manufacturing,478.12,7.62,39.54,4.67,11.78,2.51
+TSLA,"Tesla, Inc.",Technology,Software,420.18,-9.8,44.12,0.25,9.22,0.2
+FB,"Meta Platforms, Inc.",Finance,Investment Services,88.9,0.63,6.96,4.99,2.6,2.51
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Pharmaceuticals,390.9,-0.79,49.72,3.86,9.32,0.9
+JNJ,Johnson & Johnson,Technology,Hardware,132.33,-5.99,44.14,1.79,6.23,1.63
+JPM,JPMorgan Chase & Co.,Industrial Goods,Aerospace,355.33,5.42,23.67,2.13,15.6,2.01
+V,Visa Inc.,Energy,Oil & Gas,284.97,2.84,9.68,0.4,6.68,2.46
+AAPL,Apple Inc.,Utilities,Gas Utilities,,8.0,9.0,1.44,12.75,2.55
+GOOGL,Alphabet Inc.,Energy,Oil & Gas,337.25,-8.69,31.32,,9.39,1.68
+MSFT,Microsoft Corporation,Consumer Goods,Household Products,,0.86,18.58,,6.45,1.29
+AMZN,"Amazon.com, Inc.",Utilities,Gas Utilities,341.97,-8.47,21.34,2.67,4.66,0.18
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,391.33,1.04,,,16.57,2.22
+FB,"Meta Platforms, Inc.",Healthcare,Pharmaceuticals,6.09,,11.09,2.9,19.38,0.15
+BRK.B,Berkshire Hathaway Inc.,Finance,Banks,1.24,-4.44,28.15,6.64,,0.42
+JNJ,Johnson & Johnson,Industrial Goods,Aerospace,,-1.23,33.46,0.76,11.71,0.87
+JPM,JPMorgan Chase & Co.,Utilities,Gas Utilities,303.76,-9.6,13.9,4.78,,1.55
+V,Visa Inc.,Finance,Banks,274.59,,11.03,8.1,7.54,2.1
+AAPL,Apple Inc.,Energy,Coal,154.62,0.07,30.14,2.4,11.18,2.27
+GOOGL,Alphabet Inc.,Energy,Coal,36.88,,12.25,5.33,19.42,
+MSFT,Microsoft Corporation,Utilities,Electric Utilities,188.4,-9.91,35.67,4.11,15.17,2.38
+AMZN,"Amazon.com, Inc.",Consumer Goods,Beverages,20.93,-6.9,10.77,1.72,,2.58
+TSLA,"Tesla, Inc.",Consumer Goods,Beverages,281.75,-0.39,16.65,4.71,12.0,2.14
+FB,"Meta Platforms, Inc.",Energy,Renewable Energy,,,37.71,9.23,12.78,
+BRK.B,Berkshire Hathaway Inc.,Utilities,Electric Utilities,,-9.13,45.72,5.16,13.45,0.2
+JNJ,Johnson & Johnson,Healthcare,Biotechnology,101.06,3.15,24.96,2.91,8.43,1.34
+JPM,JPMorgan Chase & Co.,Consumer Goods,Household Products,397.82,1.14,14.66,,,2.51
+V,Visa Inc.,Industrial Goods,Construction,377.87,-4.41,43.07,0.6,19.06,0.3
+AAPL,Apple Inc.,Healthcare,Biotechnology,281.22,-4.43,22.49,9.06,17.13,1.55
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,184.14,-2.97,33.69,9.62,19.53,2.12
+MSFT,Microsoft Corporation,Finance,Investment Services,281.28,7.8,21.0,2.08,9.18,0.62
+AMZN,"Amazon.com, Inc.",Healthcare,Medical Devices,366.07,7.91,47.14,4.91,2.28,1.4
+TSLA,"Tesla, Inc.",Consumer Goods,Household Products,86.98,-2.88,44.44,,11.39,0.54
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,473.15,1.22,35.04,1.13,2.96,1.39
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,1.76,-6.2,14.89,9.5,3.16,0.11
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,132.35,8.57,35.03,4.14,13.64,1.2
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,166.41,-4.8,7.17,4.06,12.5,2.65
+V,Visa Inc.,Consumer Goods,Household Products,193.31,0.52,35.41,7.27,7.2,1.71
+AAPL,Apple Inc.,Consumer Goods,Beverages,403.39,,27.26,4.73,11.63,0.66
+GOOGL,Alphabet Inc.,Consumer Goods,Food Products,3.74,-4.95,33.5,0.72,2.24,1.94
+MSFT,Microsoft Corporation,Consumer Goods,Food Products,163.49,-2.07,13.49,6.91,6.65,0.98
+AMZN,"Amazon.com, Inc.",Industrial Goods,Construction,367.45,-9.21,40.92,,13.43,
+TSLA,"Tesla, Inc.",Energy,Renewable Energy,285.29,7.58,17.73,6.23,3.38,1.06
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,75.4,5.91,8.63,1.89,13.85,2.71
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,156.89,-5.52,43.35,,13.27,2.9
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,18.78,-5.26,40.06,6.06,4.19,0.77
+JPM,JPMorgan Chase & Co.,Industrial Goods,Aerospace,61.81,-5.09,18.26,1.83,12.52,0.88
+V,Visa Inc.,Industrial Goods,Manufacturing,88.3,,,8.57,2.96,
+AAPL,Apple Inc.,Industrial Goods,Construction,21.02,4.92,15.04,9.39,9.78,1.34
+GOOGL,Alphabet Inc.,Finance,Investment Services,419.19,-4.81,18.02,6.78,4.33,0.69
+MSFT,Microsoft Corporation,Finance,Banks,50.32,1.09,19.75,2.21,9.38,2.0
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,84.85,6.81,19.82,7.48,16.37,
+TSLA,"Tesla, Inc.",Utilities,Water Utilities,440.62,-6.78,23.65,4.05,7.19,
+FB,"Meta Platforms, Inc.",Utilities,Water Utilities,476.74,-3.16,33.79,9.59,15.98,2.06
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,156.33,-6.68,11.24,3.37,16.07,0.6
+JNJ,Johnson & Johnson,Finance,Investment Services,334.62,-4.28,35.65,6.66,,2.14
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,427.06,8.92,46.21,4.06,17.94,0.0
+V,Visa Inc.,Industrial Goods,Manufacturing,,5.13,35.71,4.05,11.15,0.76
+AAPL,Apple Inc.,Energy,Renewable Energy,210.97,-1.54,39.2,8.38,1.99,1.69
+GOOGL,Alphabet Inc.,Finance,Insurance,,,43.68,3.11,0.13,0.7
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,,3.85,25.35,1.29,17.62,1.29
+AMZN,"Amazon.com, Inc.",Technology,Hardware,29.91,-4.32,,7.99,1.35,2.24
+TSLA,"Tesla, Inc.",Energy,Coal,322.03,8.43,,,4.83,1.15
+FB,"Meta Platforms, Inc.",Technology,Software,,-4.68,22.81,7.31,,2.58
+BRK.B,Berkshire Hathaway Inc.,Technology,Software,182.11,-4.71,5.27,1.82,9.54,0.83
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,253.33,-2.92,34.12,4.25,13.47,1.81
+JPM,JPMorgan Chase & Co.,Energy,Oil & Gas,321.12,,48.08,9.73,12.87,1.08
+V,Visa Inc.,Healthcare,Biotechnology,,9.59,18.92,7.57,11.21,0.69
+AAPL,Apple Inc.,Technology,Semiconductors,,,7.55,0.28,3.13,
+GOOGL,Alphabet Inc.,Industrial Goods,Manufacturing,460.26,,40.07,7.53,5.23,0.93
+MSFT,Microsoft Corporation,Consumer Goods,Food Products,365.51,6.67,29.58,4.75,7.75,0.58
+AMZN,"Amazon.com, Inc.",Industrial Goods,Aerospace,164.84,8.94,27.62,4.72,6.25,1.02
+TSLA,"Tesla, Inc.",Industrial Goods,Manufacturing,,-6.73,43.38,4.82,9.12,2.35
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,83.35,-3.53,9.66,8.15,6.01,2.93
+BRK.B,Berkshire Hathaway Inc.,Finance,Banks,343.18,-0.26,40.59,8.15,4.69,0.15
+JNJ,Johnson & Johnson,Industrial Goods,Construction,211.99,3.11,17.29,0.51,7.53,2.57
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,302.04,5.1,37.67,0.43,16.07,1.6
+V,Visa Inc.,Energy,Renewable Energy,45.76,-6.8,12.28,,17.9,0.62
+AAPL,Apple Inc.,Utilities,Water Utilities,55.39,0.65,6.68,1.81,4.73,1.97
+GOOGL,Alphabet Inc.,Finance,Insurance,152.77,2.19,40.23,8.16,1.02,
+MSFT,Microsoft Corporation,Energy,Renewable Energy,15.63,-5.02,20.08,2.71,18.41,0.7
+AMZN,"Amazon.com, Inc.",Consumer Goods,Household Products,5.1,-2.14,43.24,4.1,14.43,2.08
+TSLA,"Tesla, Inc.",Technology,Semiconductors,335.35,-0.05,30.82,3.73,14.31,2.02
+FB,"Meta Platforms, Inc.",Energy,Coal,432.87,-0.04,21.48,6.62,6.89,1.04
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,348.07,0.19,23.77,9.95,3.04,1.78
+JNJ,Johnson & Johnson,Utilities,Electric Utilities,354.87,,39.01,5.49,5.45,1.48
+JPM,JPMorgan Chase & Co.,Consumer Goods,Beverages,,-0.58,35.43,9.29,2.91,1.19
+V,Visa Inc.,Utilities,Electric Utilities,471.81,-8.42,28.14,7.66,12.04,0.07
+AAPL,Apple Inc.,Technology,Software,,0.7,22.75,9.15,17.04,1.36
+GOOGL,Alphabet Inc.,Finance,Insurance,289.79,9.12,15.42,4.86,19.55,2.48
+MSFT,Microsoft Corporation,Finance,Insurance,363.29,3.23,8.08,4.57,13.31,0.89
+AMZN,"Amazon.com, Inc.",Consumer Goods,Household Products,6.85,8.01,22.39,,0.88,0.44
+TSLA,"Tesla, Inc.",Industrial Goods,Aerospace,389.31,-0.0,14.57,6.34,3.21,0.57
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,210.12,8.19,15.54,0.98,12.72,0.29
+BRK.B,Berkshire Hathaway Inc.,Energy,Oil & Gas,483.13,-4.88,47.13,3.01,16.65,1.99
+JNJ,Johnson & Johnson,Utilities,Water Utilities,451.71,-8.91,25.52,7.47,11.71,0.53
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,,7.67,23.73,3.46,1.25,2.79
+V,Visa Inc.,Finance,Banks,149.61,1.91,49.91,5.18,18.73,2.36
+AAPL,Apple Inc.,Utilities,Electric Utilities,366.86,7.14,32.48,4.59,14.29,0.67
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,473.52,-0.4,,,7.89,2.13
+MSFT,Microsoft Corporation,Energy,Coal,339.28,-5.41,,,10.29,0.47
+AMZN,"Amazon.com, Inc.",Healthcare,Medical Devices,,-2.57,45.08,6.12,,1.58
+TSLA,"Tesla, Inc.",Finance,Insurance,153.2,-7.3,16.29,6.82,,1.9
+FB,"Meta Platforms, Inc.",Utilities,Electric Utilities,402.07,,,4.48,,2.89
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,115.46,2.34,44.92,6.24,,0.3
+JNJ,Johnson & Johnson,Healthcare,Biotechnology,,-9.57,6.26,8.92,14.48,0.32
+JPM,JPMorgan Chase & Co.,Consumer Goods,Food Products,478.3,-0.38,35.46,5.1,18.87,1.2
+V,Visa Inc.,Healthcare,Medical Devices,2.78,-4.39,,,16.55,2.78
+AAPL,Apple Inc.,Finance,Banks,,2.96,,5.57,8.31,0.51
+GOOGL,Alphabet Inc.,Consumer Goods,Household Products,408.11,,10.36,5.01,12.96,1.8
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,47.7,-4.93,9.68,3.22,10.81,2.92
+AMZN,"Amazon.com, Inc.",Consumer Goods,Household Products,498.7,0.45,29.49,3.58,13.84,1.41
+TSLA,"Tesla, Inc.",Finance,Insurance,492.23,,43.24,9.64,13.73,0.98
+FB,"Meta Platforms, Inc.",Utilities,Water Utilities,492.1,8.95,36.79,8.71,14.99,2.11
+BRK.B,Berkshire Hathaway Inc.,Utilities,Electric Utilities,449.98,3.03,7.53,8.11,,2.49
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,223.61,-3.54,5.61,7.97,6.63,1.07
+JPM,JPMorgan Chase & Co.,Industrial Goods,Construction,148.53,-8.07,45.26,6.77,13.0,0.18
+V,Visa Inc.,Energy,Coal,258.72,-5.59,39.4,9.34,6.52,
+AAPL,Apple Inc.,Healthcare,Pharmaceuticals,33.92,-7.45,10.05,8.72,18.62,1.42
+GOOGL,Alphabet Inc.,Industrial Goods,Construction,257.64,0.49,42.32,7.04,19.22,
+MSFT,Microsoft Corporation,Finance,Banks,425.98,-0.26,,8.24,8.67,1.17
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,82.48,-7.95,5.05,2.06,8.29,
+TSLA,"Tesla, Inc.",Industrial Goods,Aerospace,354.86,-3.98,46.41,7.13,5.87,1.55
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,95.39,1.86,38.31,4.41,15.03,0.91
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Manufacturing,269.32,9.72,21.27,7.71,,1.19
+JNJ,Johnson & Johnson,Technology,Semiconductors,,-4.82,13.12,1.96,18.17,2.79
+JPM,JPMorgan Chase & Co.,Finance,Banks,60.29,-9.33,21.37,3.38,8.67,1.51
+V,Visa Inc.,Technology,Hardware,319.61,-7.32,29.31,7.16,3.39,2.11
+AAPL,Apple Inc.,Finance,Banks,,5.46,,,11.34,0.58
+GOOGL,Alphabet Inc.,Industrial Goods,Construction,269.66,,30.44,6.43,18.81,1.17
+MSFT,Microsoft Corporation,Utilities,Gas Utilities,363.86,-2.05,48.36,5.68,15.45,2.58
+AMZN,"Amazon.com, Inc.",Industrial Goods,Manufacturing,125.69,2.32,41.67,,7.65,
+TSLA,"Tesla, Inc.",Finance,Investment Services,373.51,-8.76,33.34,2.19,13.44,1.91
+FB,"Meta Platforms, Inc.",Technology,Hardware,,0.48,31.82,3.62,13.31,0.75
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Beverages,487.86,-3.01,16.62,2.22,3.26,3.0
+JNJ,Johnson & Johnson,Technology,Hardware,114.03,2.87,46.51,4.96,14.7,2.91
+JPM,JPMorgan Chase & Co.,Healthcare,Biotechnology,350.83,0.48,22.2,0.77,11.97,2.6
+V,Visa Inc.,Industrial Goods,Aerospace,251.18,,8.75,5.3,4.37,1.02
+AAPL,Apple Inc.,Finance,Insurance,322.86,,46.01,2.83,0.64,1.97
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,,-9.14,26.12,7.53,15.82,1.5
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,456.11,-2.24,28.16,4.67,,
+AMZN,"Amazon.com, Inc.",Energy,Coal,434.07,4.69,5.98,6.87,3.93,1.27
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,350.27,-9.38,45.09,7.7,5.06,2.94
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,134.83,-8.0,43.93,2.96,13.92,2.46
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,357.97,-5.56,5.43,4.71,3.55,1.13
+JNJ,Johnson & Johnson,Consumer Goods,Food Products,363.14,,28.89,5.65,1.67,1.5
+JPM,JPMorgan Chase & Co.,Industrial Goods,Aerospace,201.97,-6.01,44.42,7.05,0.6,0.03
+V,Visa Inc.,Energy,Coal,179.56,0.26,27.46,6.03,19.21,2.66
+AAPL,Apple Inc.,Finance,Banks,236.81,-5.97,44.99,6.78,3.46,2.11
+GOOGL,Alphabet Inc.,Technology,Hardware,,-0.5,45.09,6.45,9.99,
+MSFT,Microsoft Corporation,Technology,Software,22.24,5.64,22.14,0.96,11.4,0.84
+AMZN,"Amazon.com, Inc.",Finance,Investment Services,,,,0.51,3.5,0.31
+TSLA,"Tesla, Inc.",Consumer Goods,Beverages,113.13,-9.62,23.83,3.1,6.44,1.34
+FB,"Meta Platforms, Inc.",Industrial Goods,Manufacturing,70.47,-0.18,23.96,6.58,18.36,2.84
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Beverages,485.36,1.68,25.97,5.43,16.19,1.84
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,233.72,,27.46,7.8,9.07,2.95
+JPM,JPMorgan Chase & Co.,Energy,Oil & Gas,188.62,2.63,40.06,7.61,,1.7
+V,Visa Inc.,Industrial Goods,Manufacturing,282.17,3.14,19.91,6.67,18.76,1.96
+AAPL,Apple Inc.,Industrial Goods,Manufacturing,262.26,4.38,6.82,5.64,2.52,
+GOOGL,Alphabet Inc.,Consumer Goods,Food Products,158.36,-4.19,27.07,,9.42,2.3
+MSFT,Microsoft Corporation,Utilities,Gas Utilities,297.43,5.25,32.4,4.18,3.14,1.39
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,63.09,,18.09,2.3,2.92,1.05
+TSLA,"Tesla, Inc.",Consumer Goods,Food Products,385.09,9.7,40.75,2.96,19.26,2.95
+FB,"Meta Platforms, Inc.",Utilities,Electric Utilities,58.91,-7.13,10.3,0.91,7.13,2.05
+BRK.B,Berkshire Hathaway Inc.,Utilities,Electric Utilities,246.88,4.39,29.67,7.21,6.77,0.2
+JNJ,Johnson & Johnson,Utilities,Electric Utilities,373.29,-7.05,42.13,0.94,,1.33
+JPM,JPMorgan Chase & Co.,Healthcare,Medical Devices,443.02,7.27,25.33,4.98,6.11,2.99
+V,Visa Inc.,Industrial Goods,Construction,113.88,4.95,12.65,2.46,8.68,0.99
+AAPL,Apple Inc.,Consumer Goods,Beverages,284.91,2.92,30.07,7.86,11.06,0.33
+GOOGL,Alphabet Inc.,Consumer Goods,Household Products,,-2.29,,,14.16,2.56
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,116.62,5.07,25.14,6.82,13.28,0.33
+AMZN,"Amazon.com, Inc.",Technology,Hardware,,,18.45,7.3,15.34,2.45
+TSLA,"Tesla, Inc.",Energy,Coal,107.12,8.67,44.64,1.99,7.11,2.29
+FB,"Meta Platforms, Inc.",Utilities,Electric Utilities,173.31,7.57,5.98,,1.07,1.95
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,15.36,7.16,37.96,3.78,,1.44
+JNJ,Johnson & Johnson,Energy,Oil & Gas,254.16,-7.35,45.6,7.5,18.49,2.05
+JPM,JPMorgan Chase & Co.,Consumer Goods,Beverages,144.42,1.96,46.84,9.24,14.09,2.72
+V,Visa Inc.,Finance,Investment Services,33.42,-2.21,35.13,1.06,9.83,1.33
+AAPL,Apple Inc.,Energy,Coal,478.11,,19.75,3.15,0.81,0.84
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,167.57,3.94,18.04,0.7,10.15,1.31
+MSFT,Microsoft Corporation,Energy,Renewable Energy,10.05,8.49,,2.75,,1.85
+AMZN,"Amazon.com, Inc.",Consumer Goods,Household Products,390.72,8.5,30.33,,11.21,2.31
+TSLA,"Tesla, Inc.",Energy,Renewable Energy,363.98,7.98,43.37,2.18,1.26,2.78
+FB,"Meta Platforms, Inc.",Finance,Investment Services,327.36,2.75,5.79,3.17,18.8,0.4
+BRK.B,Berkshire Hathaway Inc.,Technology,Software,199.91,-0.17,14.67,9.07,14.35,0.85
+JNJ,Johnson & Johnson,Technology,Hardware,172.64,2.72,16.1,2.34,5.8,
+JPM,JPMorgan Chase & Co.,Industrial Goods,Aerospace,35.91,,6.18,1.77,2.3,2.4
+V,Visa Inc.,Utilities,Water Utilities,152.81,-4.66,41.62,9.8,15.5,1.57
+AAPL,Apple Inc.,Utilities,Gas Utilities,340.52,,17.8,,16.54,3.0
+GOOGL,Alphabet Inc.,Consumer Goods,Household Products,225.72,7.97,18.46,3.87,18.95,0.6
+MSFT,Microsoft Corporation,Utilities,Water Utilities,29.36,4.1,27.64,,,2.76
+AMZN,"Amazon.com, Inc.",Energy,Coal,80.44,6.73,34.55,3.32,,
+TSLA,"Tesla, Inc.",Finance,Insurance,37.07,6.08,49.88,0.61,8.71,0.08
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,449.68,-8.37,48.39,,12.14,
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Construction,80.12,8.15,13.12,0.4,11.79,1.04
+JNJ,Johnson & Johnson,Technology,Semiconductors,,-3.75,,2.14,13.68,2.97
+JPM,JPMorgan Chase & Co.,Technology,Semiconductors,197.83,6.23,,0.39,18.93,0.25
+V,Visa Inc.,Finance,Insurance,139.24,3.99,36.76,7.0,17.1,0.26
+AAPL,Apple Inc.,Industrial Goods,Manufacturing,,6.4,36.27,0.24,2.73,0.4
+GOOGL,Alphabet Inc.,Healthcare,Medical Devices,491.11,5.07,49.28,1.14,19.85,0.31
+MSFT,Microsoft Corporation,Utilities,Electric Utilities,72.08,4.49,6.89,4.85,15.95,1.68
+AMZN,"Amazon.com, Inc.",Healthcare,Medical Devices,127.9,0.66,17.61,,,2.2
+TSLA,"Tesla, Inc.",Technology,Software,437.39,-3.94,10.94,8.2,7.71,1.95
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,448.85,4.73,20.28,1.21,8.5,0.26
+BRK.B,Berkshire Hathaway Inc.,Utilities,Electric Utilities,477.92,-8.58,32.46,1.02,5.75,0.56
+JNJ,Johnson & Johnson,Utilities,Electric Utilities,263.35,,12.93,4.99,,1.68
+JPM,JPMorgan Chase & Co.,Technology,Semiconductors,353.1,6.97,29.14,6.49,4.14,2.21
+V,Visa Inc.,Healthcare,Biotechnology,420.16,,,7.94,12.92,2.41
+AAPL,Apple Inc.,Healthcare,Biotechnology,379.22,2.02,49.26,3.16,3.4,2.21
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,,5.26,14.09,8.4,19.23,0.64
+MSFT,Microsoft Corporation,Technology,Software,326.0,2.11,11.9,4.14,,2.92
+AMZN,"Amazon.com, Inc.",Utilities,Electric Utilities,108.85,-9.77,23.66,0.64,5.87,1.93
+TSLA,"Tesla, Inc.",Utilities,Water Utilities,64.07,6.39,23.53,3.48,,2.78
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,54.2,,41.88,3.78,7.12,
+BRK.B,Berkshire Hathaway Inc.,Utilities,Electric Utilities,319.69,-4.18,31.65,,19.61,
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,206.68,,36.08,6.44,14.43,1.8
+JPM,JPMorgan Chase & Co.,Finance,Banks,276.26,1.6,,9.59,12.29,0.01
+V,Visa Inc.,Energy,Renewable Energy,319.91,3.42,22.44,3.7,0.19,0.46
+AAPL,Apple Inc.,Consumer Goods,Beverages,11.14,,46.85,8.85,10.09,1.95
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,489.57,3.8,33.33,5.24,14.04,1.99
+MSFT,Microsoft Corporation,Finance,Insurance,479.32,-1.12,,3.1,9.67,2.23
+AMZN,"Amazon.com, Inc.",Utilities,Water Utilities,257.8,7.95,40.63,8.16,6.26,1.27
+TSLA,"Tesla, Inc.",Finance,Banks,159.34,-1.64,37.08,0.09,5.6,
+FB,"Meta Platforms, Inc.",Industrial Goods,Manufacturing,431.01,-2.54,,7.57,5.97,0.35
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,220.13,4.18,7.61,0.6,7.47,0.58
+JNJ,Johnson & Johnson,Industrial Goods,Aerospace,321.41,-8.96,17.27,2.08,,2.05
+JPM,JPMorgan Chase & Co.,Healthcare,Medical Devices,190.54,-3.27,18.02,,,0.74
+V,Visa Inc.,Technology,Semiconductors,,-3.55,18.97,1.24,18.67,1.91
+AAPL,Apple Inc.,Utilities,Electric Utilities,242.83,-6.26,36.44,5.47,0.7,1.94
+GOOGL,Alphabet Inc.,Consumer Goods,Food Products,51.51,,28.76,,,0.87
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,134.26,6.42,12.33,7.8,13.53,0.98
+AMZN,"Amazon.com, Inc.",Finance,Banks,39.98,-5.85,11.54,8.31,17.26,
+TSLA,"Tesla, Inc.",Finance,Banks,15.35,6.56,27.12,6.42,8.29,
+FB,"Meta Platforms, Inc.",Healthcare,Pharmaceuticals,257.32,9.84,15.49,6.75,2.85,2.78
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,,-6.28,,9.91,,2.29
+JNJ,Johnson & Johnson,Utilities,Electric Utilities,,1.67,46.67,7.83,2.74,0.8
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,76.66,6.22,16.13,8.71,3.48,2.55
+V,Visa Inc.,Technology,Semiconductors,223.17,7.52,9.03,9.15,18.52,2.18
+AAPL,Apple Inc.,Industrial Goods,Construction,261.73,-7.7,,5.07,7.66,0.47
+GOOGL,Alphabet Inc.,Healthcare,Medical Devices,456.59,1.82,34.56,7.82,12.16,0.21
+MSFT,Microsoft Corporation,Energy,Coal,479.05,8.99,49.71,5.68,2.35,2.64
+AMZN,"Amazon.com, Inc.",Industrial Goods,Manufacturing,55.31,-1.31,22.06,9.9,19.34,0.57
+TSLA,"Tesla, Inc.",Finance,Banks,204.42,-6.62,21.22,6.46,16.28,0.91
+FB,"Meta Platforms, Inc.",Finance,Insurance,187.67,-8.69,,9.78,,0.02
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Pharmaceuticals,411.38,4.73,30.62,6.69,14.94,0.4
+JNJ,Johnson & Johnson,Technology,Software,444.65,0.64,16.19,,11.2,0.67
+JPM,JPMorgan Chase & Co.,Technology,Semiconductors,260.66,4.15,5.95,6.08,19.24,1.98
+V,Visa Inc.,Consumer Goods,Household Products,165.2,4.38,45.62,6.19,4.34,2.79
+AAPL,Apple Inc.,Technology,Software,204.16,3.09,47.86,5.29,15.77,2.26
+GOOGL,Alphabet Inc.,Technology,Hardware,202.91,9.04,35.19,3.1,8.14,1.85
+MSFT,Microsoft Corporation,Energy,Oil & Gas,108.07,6.2,17.73,0.34,2.29,2.24
+AMZN,"Amazon.com, Inc.",Utilities,Water Utilities,190.57,-5.65,38.47,1.35,17.86,1.23
+TSLA,"Tesla, Inc.",Technology,Hardware,422.84,9.6,17.65,8.01,0.54,2.04
+FB,"Meta Platforms, Inc.",Energy,Coal,131.93,7.41,45.0,3.67,3.74,2.62
+BRK.B,Berkshire Hathaway Inc.,Energy,Oil & Gas,83.58,4.57,15.78,4.75,,1.74
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,61.41,0.91,15.18,8.21,0.95,0.3
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,380.29,0.5,8.13,3.26,1.84,2.97
+V,Visa Inc.,Technology,Software,459.21,-7.31,23.58,,2.36,2.71
+AAPL,Apple Inc.,Healthcare,Medical Devices,496.17,-0.16,26.41,6.21,0.26,1.71
+GOOGL,Alphabet Inc.,Healthcare,Pharmaceuticals,75.4,8.77,30.1,7.02,16.82,0.25
+MSFT,Microsoft Corporation,Industrial Goods,Aerospace,61.5,0.2,20.13,3.42,9.6,
+AMZN,"Amazon.com, Inc.",Consumer Goods,Household Products,215.64,,13.35,7.84,2.67,2.75
+TSLA,"Tesla, Inc.",Utilities,Water Utilities,242.89,-7.35,9.69,7.25,4.82,0.41
+FB,"Meta Platforms, Inc.",Consumer Goods,Beverages,447.66,-4.09,15.52,0.15,6.01,2.15
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Pharmaceuticals,496.0,3.61,46.7,3.42,12.99,2.02
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,259.67,-4.09,,5.74,11.59,2.56
+JPM,JPMorgan Chase & Co.,Healthcare,Biotechnology,228.5,5.02,37.03,,17.62,2.41
+V,Visa Inc.,Consumer Goods,Beverages,133.83,7.2,,9.19,9.48,0.03
+AAPL,Apple Inc.,Industrial Goods,Manufacturing,16.26,6.41,,6.0,6.79,0.14
+GOOGL,Alphabet Inc.,Energy,Renewable Energy,315.01,0.71,11.95,1.68,19.79,1.36
+MSFT,Microsoft Corporation,Industrial Goods,Manufacturing,163.43,-8.59,45.04,1.99,15.16,1.05
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,97.66,2.8,9.25,6.2,10.32,
+TSLA,"Tesla, Inc.",Energy,Renewable Energy,332.81,-7.95,42.03,3.23,11.98,0.83
+FB,"Meta Platforms, Inc.",Technology,Software,168.89,3.69,,3.33,4.75,
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,478.86,-8.24,5.2,6.73,12.33,2.21
+JNJ,Johnson & Johnson,Energy,Coal,269.73,-6.82,31.52,8.87,8.43,2.01
+JPM,JPMorgan Chase & Co.,Finance,Insurance,179.04,-7.76,41.0,2.65,1.16,1.34
+V,Visa Inc.,Industrial Goods,Construction,117.11,-1.8,23.38,,4.89,2.91
+AAPL,Apple Inc.,Energy,Renewable Energy,390.86,-2.48,24.47,,6.38,1.47
+GOOGL,Alphabet Inc.,Finance,Banks,135.71,-0.9,,,18.47,
+MSFT,Microsoft Corporation,Energy,Renewable Energy,,,,,15.88,1.13
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,21.07,-5.31,41.38,8.34,2.32,2.92
+TSLA,"Tesla, Inc.",Healthcare,Medical Devices,181.83,-3.04,26.06,6.45,15.06,0.98
+FB,"Meta Platforms, Inc.",Healthcare,Medical Devices,286.71,9.31,9.65,4.6,8.44,1.8
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Beverages,245.82,4.58,,,11.77,0.59
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,217.69,-3.27,27.11,,0.22,0.71
+JPM,JPMorgan Chase & Co.,Technology,Semiconductors,88.04,-0.7,34.15,6.09,1.5,0.19
+V,Visa Inc.,Technology,Semiconductors,284.52,-0.94,46.35,2.85,13.26,0.34
+AAPL,Apple Inc.,Consumer Goods,Beverages,,8.36,15.16,1.2,4.13,0.51
+GOOGL,Alphabet Inc.,Technology,Semiconductors,164.54,-5.87,23.13,4.38,0.89,2.59
+MSFT,Microsoft Corporation,Technology,Software,78.26,,23.53,,9.86,1.1
+AMZN,"Amazon.com, Inc.",Industrial Goods,Construction,,3.69,23.84,0.92,12.78,1.07
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,183.32,1.16,27.43,6.02,0.74,0.1
+FB,"Meta Platforms, Inc.",Technology,Semiconductors,111.57,-0.66,,2.16,6.31,1.32
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,116.22,3.0,50.0,5.95,12.6,0.33
+JNJ,Johnson & Johnson,Utilities,Water Utilities,87.4,,36.48,8.65,16.17,1.97
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,286.98,,29.43,8.06,5.59,2.69
+V,Visa Inc.,Finance,Insurance,449.8,7.73,8.61,9.45,1.63,2.89
+AAPL,Apple Inc.,Utilities,Electric Utilities,327.2,3.15,16.11,,12.69,2.48
+GOOGL,Alphabet Inc.,Industrial Goods,Manufacturing,382.45,-8.43,31.55,5.5,12.24,2.09
+MSFT,Microsoft Corporation,Technology,Semiconductors,50.65,6.99,40.94,,6.25,1.22
+AMZN,"Amazon.com, Inc.",Finance,Banks,,3.35,34.95,8.07,2.08,1.73
+TSLA,"Tesla, Inc.",Consumer Goods,Food Products,221.7,,19.09,2.12,2.6,1.13
+FB,"Meta Platforms, Inc.",Healthcare,Medical Devices,11.3,6.67,7.51,2.06,10.93,0.54
+BRK.B,Berkshire Hathaway Inc.,Finance,Banks,,,35.76,6.1,19.46,2.81
+JNJ,Johnson & Johnson,Technology,Software,221.27,,5.48,,10.75,2.93
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,270.83,,12.31,4.05,19.74,1.31
+V,Visa Inc.,Industrial Goods,Aerospace,381.98,-3.73,9.08,3.47,3.26,2.9
+AAPL,Apple Inc.,Industrial Goods,Construction,442.87,-3.79,30.43,2.7,19.7,0.22
+GOOGL,Alphabet Inc.,Technology,Hardware,376.85,6.95,32.88,5.01,7.54,0.67
+MSFT,Microsoft Corporation,Energy,Coal,335.25,2.9,14.97,1.44,19.57,0.14
+AMZN,"Amazon.com, Inc.",Finance,Banks,,7.85,49.72,9.69,14.39,0.43
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,225.38,-2.35,46.11,2.34,11.59,1.08
+FB,"Meta Platforms, Inc.",Industrial Goods,Aerospace,63.52,7.4,42.92,7.27,,0.0
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,195.96,-5.3,34.76,5.73,6.77,1.03
+JNJ,Johnson & Johnson,Finance,Banks,141.81,-8.29,17.07,3.21,11.0,2.32
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,224.85,7.9,39.02,1.68,17.75,1.77
+V,Visa Inc.,Industrial Goods,Manufacturing,137.51,7.76,13.86,4.4,15.01,1.92
+AAPL,Apple Inc.,Industrial Goods,Construction,1.66,0.98,23.05,3.03,10.36,
+GOOGL,Alphabet Inc.,Industrial Goods,Aerospace,424.2,-2.32,25.77,2.72,5.56,0.19
+MSFT,Microsoft Corporation,Utilities,Electric Utilities,249.67,,47.0,0.54,3.14,1.26
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,352.51,3.05,20.38,1.85,,1.76
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,126.49,,,3.72,15.82,1.33
+FB,"Meta Platforms, Inc.",Industrial Goods,Manufacturing,327.8,2.95,39.18,,5.31,1.85
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Food Products,289.5,-3.53,29.99,2.35,8.94,
+JNJ,Johnson & Johnson,Finance,Banks,423.99,1.04,32.35,0.31,,1.16
+JPM,JPMorgan Chase & Co.,Finance,Banks,,3.21,21.42,0.28,19.48,2.46
+V,Visa Inc.,Healthcare,Biotechnology,70.69,5.18,19.52,2.44,14.78,2.21
+AAPL,Apple Inc.,Finance,Insurance,406.68,-2.54,,6.85,17.23,
+GOOGL,Alphabet Inc.,Healthcare,Medical Devices,114.36,2.51,6.78,1.77,,2.05
+MSFT,Microsoft Corporation,Technology,Software,277.11,2.18,26.15,3.25,2.96,1.06
+AMZN,"Amazon.com, Inc.",Energy,Coal,160.23,0.95,,4.72,18.23,2.22
+TSLA,"Tesla, Inc.",Industrial Goods,Manufacturing,164.68,-0.71,43.12,9.38,8.57,2.8
+FB,"Meta Platforms, Inc.",Healthcare,Pharmaceuticals,344.69,,20.62,8.37,17.19,0.15
+BRK.B,Berkshire Hathaway Inc.,Utilities,Gas Utilities,162.27,,19.71,7.89,14.25,0.96
+JNJ,Johnson & Johnson,Healthcare,Biotechnology,81.44,-8.61,29.87,4.68,2.48,2.51
+JPM,JPMorgan Chase & Co.,Consumer Goods,Household Products,237.03,4.35,49.1,1.53,18.55,
+V,Visa Inc.,Consumer Goods,Beverages,145.61,8.56,8.95,4.59,,2.7
+AAPL,Apple Inc.,Technology,Semiconductors,333.92,-2.85,,5.55,16.06,
+GOOGL,Alphabet Inc.,Finance,Investment Services,267.2,-7.31,7.4,1.2,9.48,2.01
+MSFT,Microsoft Corporation,Consumer Goods,Household Products,64.3,-7.96,46.95,1.9,,1.59
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,144.31,-0.93,39.14,4.21,4.02,1.07
+TSLA,"Tesla, Inc.",Energy,Renewable Energy,104.54,-8.18,,3.51,10.8,2.25
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,79.46,0.35,22.81,,4.02,1.5
+BRK.B,Berkshire Hathaway Inc.,Technology,Software,82.6,3.75,23.99,9.28,9.34,0.09
+JNJ,Johnson & Johnson,Technology,Software,1.99,9.61,,2.74,12.8,2.19
+JPM,JPMorgan Chase & Co.,Industrial Goods,Construction,265.69,,36.97,,13.73,1.01
+V,Visa Inc.,Technology,Semiconductors,6.64,-2.18,40.19,1.88,16.33,
+AAPL,Apple Inc.,Consumer Goods,Food Products,264.3,-3.44,18.03,5.45,,
+GOOGL,Alphabet Inc.,Utilities,Gas Utilities,456.2,4.62,33.0,0.32,7.15,1.04
+MSFT,Microsoft Corporation,Finance,Banks,493.11,-6.93,6.52,7.46,8.83,1.29
+AMZN,"Amazon.com, Inc.",Consumer Goods,Beverages,490.13,6.8,49.57,,16.87,1.22
+TSLA,"Tesla, Inc.",Consumer Goods,Food Products,250.67,3.46,13.35,6.68,0.26,2.5
+FB,"Meta Platforms, Inc.",Finance,Investment Services,194.6,0.58,5.89,0.6,11.98,2.64
+BRK.B,Berkshire Hathaway Inc.,Technology,Hardware,451.32,6.91,45.19,0.06,14.86,1.65
+JNJ,Johnson & Johnson,Industrial Goods,Aerospace,347.64,-3.16,19.41,7.84,1.16,2.28
+JPM,JPMorgan Chase & Co.,Finance,Insurance,496.87,-1.56,12.51,2.86,11.11,1.72
+V,Visa Inc.,Finance,Investment Services,83.29,-3.49,40.6,1.72,13.85,1.69
+AAPL,Apple Inc.,Technology,Semiconductors,107.5,8.7,14.24,9.31,13.13,0.34
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,276.48,5.65,26.25,0.26,,0.25
+MSFT,Microsoft Corporation,Finance,Investment Services,115.77,-2.2,36.29,3.58,3.33,1.56
+AMZN,"Amazon.com, Inc.",Energy,Renewable Energy,1.13,-3.12,27.26,8.19,16.79,2.17
+TSLA,"Tesla, Inc.",Industrial Goods,Manufacturing,30.11,5.68,43.68,6.04,8.63,2.54
+FB,"Meta Platforms, Inc.",Energy,Coal,257.86,-6.62,41.28,1.46,9.67,2.24
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Aerospace,7.34,7.61,47.93,5.75,15.1,1.54
+JNJ,Johnson & Johnson,Finance,Banks,105.64,-0.66,49.11,5.55,18.77,2.44
+JPM,JPMorgan Chase & Co.,Consumer Goods,Beverages,156.13,4.05,27.25,3.23,8.32,2.69
+V,Visa Inc.,Industrial Goods,Manufacturing,133.57,-9.69,23.32,5.08,6.02,1.15
+AAPL,Apple Inc.,Technology,Hardware,470.49,0.23,10.8,2.8,14.62,0.04
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,294.39,-8.7,27.18,9.93,7.81,1.78
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,42.29,6.38,20.37,8.49,19.84,1.05
+AMZN,"Amazon.com, Inc.",Energy,Coal,37.28,7.13,43.71,4.13,12.28,1.93
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,274.47,-2.8,29.31,4.06,16.75,0.22
+FB,"Meta Platforms, Inc.",Finance,Insurance,394.51,6.6,23.05,6.39,17.18,
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,204.4,4.82,,8.13,19.94,
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,56.71,-7.34,12.89,,,0.44
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,460.67,-4.78,42.36,2.68,6.93,0.6
+V,Visa Inc.,Energy,Coal,288.5,-8.46,38.92,9.09,10.26,2.16
+AAPL,Apple Inc.,Technology,Hardware,148.15,7.94,32.92,4.23,12.5,1.21
+GOOGL,Alphabet Inc.,Energy,Oil & Gas,,-7.22,42.75,5.96,18.77,2.6
+MSFT,Microsoft Corporation,Industrial Goods,Construction,24.56,7.47,41.32,7.85,0.42,0.14
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,50.75,-0.65,35.02,4.94,13.52,2.45
+TSLA,"Tesla, Inc.",Healthcare,Medical Devices,158.97,6.58,5.14,6.45,,
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,287.41,9.15,24.42,1.77,9.52,1.31
+BRK.B,Berkshire Hathaway Inc.,Technology,Hardware,339.16,1.28,,6.4,14.5,
+JNJ,Johnson & Johnson,Technology,Software,80.82,4.09,30.73,2.7,19.01,0.88
+JPM,JPMorgan Chase & Co.,Finance,Insurance,130.79,-3.53,43.34,8.41,2.18,2.85
+V,Visa Inc.,Consumer Goods,Beverages,191.21,,15.71,8.76,13.61,0.84
+AAPL,Apple Inc.,Utilities,Electric Utilities,158.23,8.78,16.83,3.98,7.71,0.72
+GOOGL,Alphabet Inc.,Finance,Banks,37.25,-3.38,27.3,0.57,1.86,
+MSFT,Microsoft Corporation,Healthcare,Medical Devices,36.2,4.07,22.37,,2.62,0.68
+AMZN,"Amazon.com, Inc.",Energy,Oil & Gas,352.83,-7.37,24.97,,11.13,2.93
+TSLA,"Tesla, Inc.",Technology,Software,492.76,-7.17,18.34,1.71,9.56,2.39
+FB,"Meta Platforms, Inc.",Energy,Renewable Energy,121.55,-4.38,31.98,9.02,11.61,1.95
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Construction,114.43,-4.35,13.14,6.68,11.64,1.95
+JNJ,Johnson & Johnson,Finance,Insurance,395.28,7.83,38.42,1.76,5.57,2.76
+JPM,JPMorgan Chase & Co.,Energy,Coal,200.23,8.22,44.83,1.87,8.04,2.51
+V,Visa Inc.,Healthcare,Pharmaceuticals,467.64,-0.5,,3.22,7.09,2.43
+AAPL,Apple Inc.,Industrial Goods,Manufacturing,411.91,8.54,34.85,3.05,13.82,
+GOOGL,Alphabet Inc.,Healthcare,Medical Devices,202.37,8.61,18.8,8.43,13.64,2.56
+MSFT,Microsoft Corporation,Finance,Banks,,6.56,24.89,9.5,11.09,0.98
+AMZN,"Amazon.com, Inc.",Finance,Insurance,,3.33,12.74,5.46,6.76,0.23
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,126.32,-2.02,47.26,6.74,5.18,0.17
+FB,"Meta Platforms, Inc.",Industrial Goods,Aerospace,,-4.49,32.13,2.05,13.49,0.41
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Pharmaceuticals,41.59,0.24,19.74,3.36,12.75,0.49
+JNJ,Johnson & Johnson,Finance,Banks,13.63,,41.75,,11.62,
+JPM,JPMorgan Chase & Co.,Finance,Insurance,377.82,-1.75,,5.85,2.69,1.71
+V,Visa Inc.,Technology,Semiconductors,10.14,3.87,44.75,9.77,16.63,0.1
+AAPL,Apple Inc.,Utilities,Water Utilities,357.48,9.29,31.02,8.4,18.85,1.71
+GOOGL,Alphabet Inc.,Healthcare,Biotechnology,,-0.35,12.62,0.44,3.86,2.04
+MSFT,Microsoft Corporation,Technology,Hardware,174.54,-3.41,38.72,0.75,17.22,
+AMZN,"Amazon.com, Inc.",Utilities,Electric Utilities,154.07,8.35,17.27,9.08,18.09,2.77
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,376.93,-8.52,28.56,1.22,5.94,0.78
+FB,"Meta Platforms, Inc.",Technology,Hardware,232.52,-9.82,28.91,9.53,3.18,1.72
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Aerospace,307.44,-2.45,,3.06,13.51,1.69
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,222.72,3.54,38.82,3.99,9.61,2.27
+JPM,JPMorgan Chase & Co.,Energy,Coal,174.72,5.98,,8.47,5.17,0.03
+V,Visa Inc.,Consumer Goods,Food Products,,-1.76,15.47,,5.97,2.47
+AAPL,Apple Inc.,Finance,Investment Services,161.96,7.0,36.85,8.69,,2.16
+GOOGL,Alphabet Inc.,Energy,Renewable Energy,245.18,-9.87,26.71,,12.15,2.91
+MSFT,Microsoft Corporation,Industrial Goods,Aerospace,115.44,,22.4,6.48,,0.71
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,497.75,-1.44,34.8,,18.68,
+TSLA,"Tesla, Inc.",Industrial Goods,Manufacturing,15.96,2.12,19.02,4.44,16.39,0.74
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,458.18,7.94,49.29,4.02,16.39,1.24
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Construction,,9.98,,2.48,12.5,2.41
+JNJ,Johnson & Johnson,Technology,Hardware,463.56,4.21,47.16,6.6,0.24,0.8
+JPM,JPMorgan Chase & Co.,Energy,Oil & Gas,221.79,2.85,19.01,0.8,14.2,1.38
+V,Visa Inc.,Energy,Renewable Energy,177.79,0.44,28.85,6.87,4.57,1.98
+AAPL,Apple Inc.,Energy,Renewable Energy,356.67,-6.42,5.76,1.6,7.6,0.32
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,263.02,-0.59,37.33,2.14,15.81,1.29
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,109.46,6.48,14.41,9.24,13.38,2.69
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,273.61,6.42,41.85,,,1.11
+TSLA,"Tesla, Inc.",Technology,Software,26.5,-7.34,33.9,8.04,15.84,2.16
+FB,"Meta Platforms, Inc.",Healthcare,Pharmaceuticals,,4.02,7.71,1.08,15.72,
+BRK.B,Berkshire Hathaway Inc.,Technology,Semiconductors,311.87,5.26,,3.26,4.37,3.0
+JNJ,Johnson & Johnson,Healthcare,Biotechnology,490.72,-1.21,18.32,3.48,10.44,2.81
+JPM,JPMorgan Chase & Co.,Healthcare,Biotechnology,163.26,-6.23,26.7,6.66,,1.31
+V,Visa Inc.,Consumer Goods,Beverages,378.42,-8.57,,8.29,9.5,1.68
+AAPL,Apple Inc.,Healthcare,Pharmaceuticals,272.8,5.45,20.34,,8.9,1.13
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,38.26,,33.09,6.17,5.59,1.34
+MSFT,Microsoft Corporation,Utilities,Gas Utilities,38.53,-0.75,36.81,5.81,9.95,1.06
+AMZN,"Amazon.com, Inc.",Finance,Banks,250.63,9.26,5.92,2.0,9.02,1.92
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,126.45,8.23,,9.43,9.22,2.98
+FB,"Meta Platforms, Inc.",Industrial Goods,Aerospace,209.54,-1.62,,4.43,16.16,0.9
+BRK.B,Berkshire Hathaway Inc.,Energy,Oil & Gas,363.25,-8.82,29.04,7.83,1.97,0.04
+JNJ,Johnson & Johnson,Finance,Investment Services,,-1.71,41.13,4.95,14.47,2.62
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,25.18,-0.35,46.12,7.9,7.4,0.19
+V,Visa Inc.,Industrial Goods,Aerospace,229.02,-6.82,42.97,0.45,5.42,1.56
+AAPL,Apple Inc.,Consumer Goods,Household Products,276.54,-3.77,45.83,7.97,14.14,1.77
+GOOGL,Alphabet Inc.,Energy,Oil & Gas,326.03,-3.02,,2.54,,2.44
+MSFT,Microsoft Corporation,Technology,Hardware,282.07,-2.73,14.11,5.95,,0.5
+AMZN,"Amazon.com, Inc.",Utilities,Electric Utilities,125.47,-0.79,12.24,4.04,,2.73
+TSLA,"Tesla, Inc.",Energy,Coal,467.99,2.75,49.1,7.53,2.2,2.56
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,194.2,,28.56,7.45,5.53,2.82
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Beverages,488.83,,12.34,5.59,11.15,1.33
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,196.74,9.02,39.27,5.73,,
+JPM,JPMorgan Chase & Co.,Industrial Goods,Construction,112.27,-8.42,37.84,4.98,15.95,1.99
+V,Visa Inc.,Healthcare,Biotechnology,499.3,5.22,,6.84,5.94,0.27
+AAPL,Apple Inc.,Finance,Investment Services,199.35,2.71,46.86,2.03,13.78,
+GOOGL,Alphabet Inc.,Healthcare,Biotechnology,262.81,9.31,5.19,8.19,6.76,1.95
+MSFT,Microsoft Corporation,Finance,Banks,366.6,5.83,47.96,7.9,,2.85
+AMZN,"Amazon.com, Inc.",Technology,Software,221.28,-6.78,27.37,3.93,,1.88
+TSLA,"Tesla, Inc.",Utilities,Electric Utilities,130.87,9.92,12.03,7.21,14.53,2.05
+FB,"Meta Platforms, Inc.",Technology,Hardware,150.19,8.95,27.86,5.61,18.99,1.96
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,204.47,4.52,9.46,7.56,2.3,2.74
+JNJ,Johnson & Johnson,Finance,Investment Services,,0.04,15.52,4.61,,1.37
+JPM,JPMorgan Chase & Co.,Consumer Goods,Beverages,24.43,5.02,47.98,0.09,,1.63
+V,Visa Inc.,Technology,Semiconductors,,1.89,15.74,8.32,5.76,0.63
+AAPL,Apple Inc.,Energy,Oil & Gas,175.0,0.85,23.72,,15.6,2.15
+GOOGL,Alphabet Inc.,Energy,Renewable Energy,285.58,-7.59,14.02,8.94,20.0,1.65
+MSFT,Microsoft Corporation,Technology,Hardware,88.14,4.72,13.95,2.6,5.8,0.49
+AMZN,"Amazon.com, Inc.",Technology,Semiconductors,248.34,,,8.83,2.67,0.12
+TSLA,"Tesla, Inc.",Energy,Renewable Energy,496.14,-2.3,15.92,5.75,4.38,2.82
+FB,"Meta Platforms, Inc.",Energy,Coal,,3.06,40.39,,5.41,0.6
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Biotechnology,131.0,-1.02,11.83,6.78,14.59,1.09
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,131.59,-7.54,12.64,3.34,8.34,2.71
+JPM,JPMorgan Chase & Co.,Energy,Oil & Gas,218.97,0.21,,3.78,0.93,2.29
+V,Visa Inc.,Industrial Goods,Aerospace,421.55,-8.23,6.13,2.35,,1.88
+AAPL,Apple Inc.,Utilities,Water Utilities,456.55,7.36,45.28,0.63,16.83,2.34
+GOOGL,Alphabet Inc.,Energy,Oil & Gas,273.36,-2.88,40.67,6.34,13.83,
+MSFT,Microsoft Corporation,Healthcare,Medical Devices,276.81,-6.22,20.68,9.46,5.77,0.47
+AMZN,"Amazon.com, Inc.",Utilities,Water Utilities,216.46,1.68,47.51,9.89,2.12,2.5
+TSLA,"Tesla, Inc.",Consumer Goods,Beverages,94.76,0.83,48.79,7.14,9.67,2.75
+FB,"Meta Platforms, Inc.",Technology,Semiconductors,217.52,-1.57,17.84,7.94,12.39,
+BRK.B,Berkshire Hathaway Inc.,Finance,Insurance,401.2,-0.46,45.71,5.75,18.58,2.95
+JNJ,Johnson & Johnson,Technology,Software,40.02,5.32,18.99,8.05,10.23,0.82
+JPM,JPMorgan Chase & Co.,Energy,Renewable Energy,19.25,-4.17,45.92,4.24,19.22,0.64
+V,Visa Inc.,Consumer Goods,Household Products,47.49,2.63,44.56,1.78,14.78,
+AAPL,Apple Inc.,Technology,Semiconductors,202.42,-2.1,7.98,9.49,9.06,2.79
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,21.41,3.55,44.97,8.55,3.45,2.73
+MSFT,Microsoft Corporation,Technology,Hardware,405.53,8.75,44.14,2.43,8.97,1.03
+AMZN,"Amazon.com, Inc.",Finance,Banks,410.8,2.6,40.37,8.0,17.04,0.8
+TSLA,"Tesla, Inc.",Finance,Insurance,130.82,-1.68,,5.2,9.97,0.64
+FB,"Meta Platforms, Inc.",Technology,Hardware,169.45,-6.73,23.16,9.05,4.57,2.05
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Food Products,,8.79,20.56,0.45,,1.01
+JNJ,Johnson & Johnson,Utilities,Electric Utilities,329.7,4.32,12.72,1.12,,0.74
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,180.14,-8.56,11.16,6.66,13.88,
+V,Visa Inc.,Industrial Goods,Manufacturing,213.76,-3.08,22.17,7.35,3.45,1.88
+AAPL,Apple Inc.,Industrial Goods,Aerospace,,0.52,,7.68,,
+GOOGL,Alphabet Inc.,Technology,Software,191.58,-3.23,10.12,8.82,12.35,2.39
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,450.08,,,9.45,14.73,1.92
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,427.28,1.56,21.57,0.7,11.86,0.35
+TSLA,"Tesla, Inc.",Technology,Software,235.33,8.45,18.38,9.06,1.17,0.25
+FB,"Meta Platforms, Inc.",Technology,Semiconductors,351.04,9.1,37.6,6.95,13.91,2.65
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,388.07,-3.75,48.35,9.83,13.37,
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,21.28,-5.75,36.2,8.26,16.17,2.36
+JPM,JPMorgan Chase & Co.,Technology,Hardware,149.92,4.07,14.9,0.11,17.34,1.57
+V,Visa Inc.,Industrial Goods,Construction,363.67,-1.06,38.28,9.94,,1.9
+AAPL,Apple Inc.,Utilities,Gas Utilities,43.32,-9.57,35.96,5.26,17.53,1.5
+GOOGL,Alphabet Inc.,Energy,Coal,181.87,-0.61,19.36,8.17,17.54,0.03
+MSFT,Microsoft Corporation,Finance,Insurance,395.89,8.08,,8.47,18.19,
+AMZN,"Amazon.com, Inc.",Technology,Software,,5.16,,2.99,4.14,1.26
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,411.16,-6.33,20.05,6.86,5.01,1.32
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,259.91,,49.94,2.67,4.69,1.87
+BRK.B,Berkshire Hathaway Inc.,Utilities,Electric Utilities,126.65,-5.53,48.1,3.62,1.02,2.91
+JNJ,Johnson & Johnson,Consumer Goods,Beverages,200.71,2.79,26.3,0.21,16.31,0.34
+JPM,JPMorgan Chase & Co.,Industrial Goods,Construction,413.19,7.79,31.08,3.13,,1.04
+V,Visa Inc.,Healthcare,Pharmaceuticals,165.97,-9.61,6.95,0.3,,0.34
+AAPL,Apple Inc.,Energy,Oil & Gas,,3.04,19.21,6.12,14.25,0.03
+GOOGL,Alphabet Inc.,Energy,Coal,124.71,3.04,47.94,3.0,17.12,1.52
+MSFT,Microsoft Corporation,Utilities,Electric Utilities,,4.45,32.88,4.17,15.87,2.84
+AMZN,"Amazon.com, Inc.",Technology,Semiconductors,358.54,9.29,43.87,,1.82,0.72
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,456.46,,21.76,4.07,,2.0
+FB,"Meta Platforms, Inc.",Utilities,Water Utilities,379.22,-6.9,47.41,5.93,1.83,0.65
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,99.76,-6.46,40.97,3.21,,2.23
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,129.87,-6.78,13.46,7.25,10.77,2.94
+JPM,JPMorgan Chase & Co.,Healthcare,Medical Devices,373.88,3.11,12.74,1.08,0.1,0.31
+V,Visa Inc.,Industrial Goods,Manufacturing,25.96,-6.12,21.81,4.05,6.26,1.54
+AAPL,Apple Inc.,Healthcare,Biotechnology,376.42,-5.28,11.56,0.42,9.5,0.86
+GOOGL,Alphabet Inc.,Utilities,Gas Utilities,208.47,,23.33,5.48,11.84,0.8
+MSFT,Microsoft Corporation,Healthcare,Pharmaceuticals,167.26,5.96,37.64,7.67,18.09,1.79
+AMZN,"Amazon.com, Inc.",Utilities,Gas Utilities,341.58,-7.46,39.74,3.58,16.14,2.87
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,52.92,0.0,41.91,9.98,4.04,0.62
+FB,"Meta Platforms, Inc.",Energy,Coal,158.45,-5.65,37.05,4.51,,2.44
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,136.35,8.25,38.16,1.54,12.24,0.08
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,337.54,-8.09,13.42,6.63,9.59,2.21
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,494.38,-6.86,37.31,5.33,5.96,0.53
+V,Visa Inc.,Energy,Coal,219.44,-1.85,21.43,5.26,12.13,1.4
+AAPL,Apple Inc.,Healthcare,Biotechnology,400.62,-6.34,33.16,9.7,10.51,0.56
+GOOGL,Alphabet Inc.,Healthcare,Pharmaceuticals,158.52,0.32,35.9,1.68,5.55,1.96
+MSFT,Microsoft Corporation,Energy,Oil & Gas,197.69,3.35,,1.79,10.34,0.36
+AMZN,"Amazon.com, Inc.",Utilities,Electric Utilities,119.95,,19.0,0.7,0.31,0.85
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,115.14,-7.3,,3.91,1.63,0.69
+FB,"Meta Platforms, Inc.",Finance,Insurance,313.97,-5.96,29.68,5.55,,
+BRK.B,Berkshire Hathaway Inc.,Finance,Insurance,473.65,8.72,30.45,6.44,2.84,0.67
+JNJ,Johnson & Johnson,Consumer Goods,Food Products,192.72,3.27,8.9,,12.16,0.63
+JPM,JPMorgan Chase & Co.,Technology,Hardware,380.53,9.39,26.49,0.06,11.97,
+V,Visa Inc.,Consumer Goods,Beverages,255.63,,20.31,,19.14,2.83
+AAPL,Apple Inc.,Utilities,Electric Utilities,390.4,0.27,40.8,0.13,16.43,
+GOOGL,Alphabet Inc.,Finance,Insurance,282.9,-9.07,39.89,2.32,6.77,0.69
+MSFT,Microsoft Corporation,Industrial Goods,Manufacturing,274.18,3.04,11.88,4.72,1.98,1.81
+AMZN,"Amazon.com, Inc.",Finance,Investment Services,413.31,-6.47,21.82,3.13,3.96,1.33
+TSLA,"Tesla, Inc.",Energy,Coal,,,36.76,5.85,,2.92
+FB,"Meta Platforms, Inc.",Healthcare,Pharmaceuticals,480.39,3.92,13.4,1.58,11.44,1.9
+BRK.B,Berkshire Hathaway Inc.,Energy,Renewable Energy,51.69,-4.69,41.75,5.04,18.17,0.27
+JNJ,Johnson & Johnson,Finance,Insurance,385.42,0.36,32.26,7.53,2.11,2.89
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,16.77,-7.69,39.92,8.13,11.89,1.75
+V,Visa Inc.,Industrial Goods,Manufacturing,307.35,,26.34,8.6,5.52,0.04
+AAPL,Apple Inc.,Consumer Goods,Beverages,108.32,-1.55,33.86,1.9,15.48,0.99
+GOOGL,Alphabet Inc.,Technology,Hardware,398.64,-6.19,,2.3,15.99,0.26
+MSFT,Microsoft Corporation,Finance,Banks,148.46,7.25,23.31,4.71,16.95,0.27
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,127.57,-5.98,27.02,0.11,13.55,2.57
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,109.9,-2.78,16.69,0.93,11.25,0.08
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,120.73,9.85,5.93,2.17,15.62,0.58
+BRK.B,Berkshire Hathaway Inc.,Utilities,Water Utilities,257.01,3.0,25.61,5.67,8.39,1.57
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,166.16,-8.11,8.84,6.58,7.77,2.61
+JPM,JPMorgan Chase & Co.,Industrial Goods,Construction,155.7,4.08,,5.61,,2.4
+V,Visa Inc.,Finance,Banks,,-2.39,,1.02,13.37,2.94
+AAPL,Apple Inc.,Technology,Semiconductors,,-7.55,24.14,3.08,7.96,2.11
+GOOGL,Alphabet Inc.,Technology,Hardware,302.96,0.05,28.76,,13.53,0.8
+MSFT,Microsoft Corporation,Technology,Semiconductors,201.88,8.39,23.39,4.43,5.12,0.0
+AMZN,"Amazon.com, Inc.",Industrial Goods,Manufacturing,421.27,7.98,12.82,6.95,19.26,1.95
+TSLA,"Tesla, Inc.",Consumer Goods,Beverages,498.79,,36.52,0.28,19.4,0.04
+FB,"Meta Platforms, Inc.",Industrial Goods,Manufacturing,174.32,,14.22,6.39,9.99,0.21
+BRK.B,Berkshire Hathaway Inc.,Technology,Semiconductors,202.49,1.87,26.24,2.83,15.12,2.11
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,455.24,-6.4,19.13,6.5,11.19,1.96
+JPM,JPMorgan Chase & Co.,Consumer Goods,Food Products,67.05,-0.92,27.3,2.56,14.5,
+V,Visa Inc.,Technology,Hardware,299.07,7.4,44.04,5.46,18.22,2.55
+AAPL,Apple Inc.,Consumer Goods,Beverages,140.95,-3.18,35.87,4.78,1.72,0.42
+GOOGL,Alphabet Inc.,Consumer Goods,Food Products,295.62,,11.71,3.72,17.42,2.83
+MSFT,Microsoft Corporation,Consumer Goods,Household Products,325.45,1.59,49.11,2.81,1.4,1.55
+AMZN,"Amazon.com, Inc.",Industrial Goods,Aerospace,444.97,8.26,12.53,6.81,6.42,2.51
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,47.46,6.45,14.63,0.26,4.43,1.44
+FB,"Meta Platforms, Inc.",Energy,Renewable Energy,280.63,5.65,48.91,5.44,8.39,2.58
+BRK.B,Berkshire Hathaway Inc.,Energy,Oil & Gas,135.14,-3.02,49.65,6.36,17.47,2.42
+JNJ,Johnson & Johnson,Energy,Coal,466.18,-4.79,19.35,6.66,1.66,1.88
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,300.55,-1.91,7.95,,6.82,1.34
+V,Visa Inc.,Industrial Goods,Manufacturing,15.7,,21.72,7.95,14.66,0.56
+AAPL,Apple Inc.,Energy,Renewable Energy,234.81,,23.56,,10.38,0.02
+GOOGL,Alphabet Inc.,Finance,Banks,,-5.23,39.99,,10.63,1.06
+MSFT,Microsoft Corporation,Healthcare,Pharmaceuticals,55.55,3.98,7.87,8.66,,0.27
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,357.05,2.56,34.31,7.93,12.66,1.26
+TSLA,"Tesla, Inc.",Consumer Goods,Beverages,204.91,7.05,,9.09,17.36,0.19
+FB,"Meta Platforms, Inc.",Finance,Insurance,421.69,3.32,24.04,0.63,,2.72
+BRK.B,Berkshire Hathaway Inc.,Utilities,Gas Utilities,51.7,9.18,,9.3,9.3,1.15
+JNJ,Johnson & Johnson,Healthcare,Pharmaceuticals,361.79,7.06,23.25,0.81,13.01,0.89
+JPM,JPMorgan Chase & Co.,Consumer Goods,Food Products,420.92,3.02,,8.65,18.12,1.13
+V,Visa Inc.,Utilities,Water Utilities,107.69,-6.05,45.0,9.68,13.98,0.36
+AAPL,Apple Inc.,Energy,Oil & Gas,352.95,-2.54,28.96,9.77,6.66,2.02
+GOOGL,Alphabet Inc.,Consumer Goods,Household Products,,-4.23,41.85,2.86,18.8,2.74
+MSFT,Microsoft Corporation,Technology,Hardware,26.93,7.31,14.89,5.84,,0.49
+AMZN,"Amazon.com, Inc.",Industrial Goods,Construction,161.86,-7.02,,2.45,9.18,1.47
+TSLA,"Tesla, Inc.",Utilities,Gas Utilities,40.18,3.44,19.26,2.29,7.66,1.78
+FB,"Meta Platforms, Inc.",Technology,Semiconductors,14.43,9.44,49.13,2.58,0.29,1.94
+BRK.B,Berkshire Hathaway Inc.,Energy,Coal,279.92,-7.0,31.92,3.74,9.11,2.88
+JNJ,Johnson & Johnson,Energy,Renewable Energy,211.68,-3.56,8.96,2.99,,2.35
+JPM,JPMorgan Chase & Co.,Healthcare,Pharmaceuticals,379.56,-1.76,,3.98,,2.61
+V,Visa Inc.,Consumer Goods,Household Products,105.3,6.03,47.58,2.32,6.41,2.14
+AAPL,Apple Inc.,Technology,Hardware,105.5,0.13,12.37,8.89,14.24,
+GOOGL,Alphabet Inc.,Finance,Banks,25.16,0.08,16.36,4.76,8.43,0.92
+MSFT,Microsoft Corporation,Technology,Software,37.95,,8.68,3.19,8.77,1.51
+AMZN,"Amazon.com, Inc.",Energy,Coal,71.22,0.4,22.59,7.54,6.53,0.38
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,104.7,-5.36,7.24,1.88,7.64,1.2
+FB,"Meta Platforms, Inc.",Healthcare,Medical Devices,278.65,1.09,35.85,3.33,8.64,
+BRK.B,Berkshire Hathaway Inc.,Technology,Semiconductors,,-6.26,,8.5,0.1,2.78
+JNJ,Johnson & Johnson,Healthcare,Pharmaceuticals,92.83,7.39,38.96,,16.12,2.63
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,259.88,0.6,36.82,3.23,0.83,0.69
+V,Visa Inc.,Healthcare,Biotechnology,113.61,1.2,44.65,4.66,,0.4
+AAPL,Apple Inc.,Technology,Software,274.07,4.05,13.42,6.54,17.65,0.42
+GOOGL,Alphabet Inc.,Finance,Banks,,-7.94,46.49,8.2,,2.96
+MSFT,Microsoft Corporation,Healthcare,Pharmaceuticals,334.01,-6.75,25.16,0.13,,2.69
+AMZN,"Amazon.com, Inc.",Energy,Coal,192.04,5.0,37.08,,11.47,0.27
+TSLA,"Tesla, Inc.",Technology,Semiconductors,49.19,1.82,20.68,2.55,14.46,0.98
+FB,"Meta Platforms, Inc.",Utilities,Water Utilities,425.13,-0.81,19.34,7.02,18.1,2.92
+BRK.B,Berkshire Hathaway Inc.,Utilities,Gas Utilities,447.48,3.63,24.82,9.48,19.27,0.94
+JNJ,Johnson & Johnson,Finance,Insurance,428.37,-5.58,32.92,5.48,14.88,2.09
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,33.27,5.46,37.18,5.53,14.35,1.12
+V,Visa Inc.,Healthcare,Biotechnology,13.7,,26.03,1.62,15.18,2.66
+AAPL,Apple Inc.,Finance,Banks,324.29,1.69,45.79,5.97,10.2,2.47
+GOOGL,Alphabet Inc.,Finance,Insurance,401.47,6.2,10.4,6.54,19.06,1.44
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,455.14,-7.28,37.43,6.9,,2.81
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,305.3,,12.88,,3.47,0.41
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,307.72,-7.54,27.31,6.69,3.06,1.49
+FB,"Meta Platforms, Inc.",Consumer Goods,Beverages,216.69,2.16,43.03,9.18,0.59,0.31
+BRK.B,Berkshire Hathaway Inc.,Finance,Insurance,299.17,7.58,37.66,4.72,15.09,2.07
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,477.54,-8.98,45.03,4.71,15.35,0.24
+JPM,JPMorgan Chase & Co.,Consumer Goods,Food Products,57.7,9.97,,3.93,5.14,2.77
+V,Visa Inc.,Healthcare,Biotechnology,222.1,-8.17,45.02,5.11,14.53,
+AAPL,Apple Inc.,Healthcare,Biotechnology,327.07,4.64,,7.36,5.85,2.06
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,93.42,-7.23,14.39,5.54,18.39,0.98
+MSFT,Microsoft Corporation,Utilities,Water Utilities,,1.28,15.76,1.24,,2.4
+AMZN,"Amazon.com, Inc.",Utilities,Electric Utilities,230.85,-7.82,29.42,0.97,12.76,0.47
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,62.08,,19.9,7.52,7.5,
+FB,"Meta Platforms, Inc.",Utilities,Water Utilities,454.75,,12.51,8.15,17.89,2.12
+BRK.B,Berkshire Hathaway Inc.,Energy,Oil & Gas,180.88,,21.31,6.72,4.35,2.43
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,85.94,-8.19,36.98,3.86,18.26,1.62
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,145.47,-8.06,18.29,4.28,19.28,1.96
+V,Visa Inc.,Utilities,Electric Utilities,280.34,-2.02,49.12,0.37,4.4,
+AAPL,Apple Inc.,Energy,Oil & Gas,468.62,5.1,17.5,7.18,5.97,
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,441.05,-7.69,31.28,9.54,,0.42
+MSFT,Microsoft Corporation,Finance,Insurance,352.89,1.69,7.01,7.97,12.14,2.66
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,419.16,-3.52,48.97,,14.52,1.98
+TSLA,"Tesla, Inc.",Finance,Insurance,272.68,-9.19,11.26,5.13,19.71,2.63
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,73.07,2.63,19.7,1.89,5.59,0.92
+BRK.B,Berkshire Hathaway Inc.,Technology,Semiconductors,203.35,1.76,,6.1,13.51,
+JNJ,Johnson & Johnson,Energy,Coal,78.31,9.71,45.8,9.63,17.07,2.63
+JPM,JPMorgan Chase & Co.,Industrial Goods,Manufacturing,402.82,-4.53,21.26,0.81,7.1,2.97
+V,Visa Inc.,Industrial Goods,Aerospace,50.57,2.88,37.48,7.16,,0.51
+AAPL,Apple Inc.,Energy,Coal,164.8,-3.06,23.71,3.78,11.37,0.24
+GOOGL,Alphabet Inc.,Technology,Software,49.75,-3.52,27.67,9.93,8.77,1.57
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,241.9,1.6,38.67,1.55,17.31,2.88
+AMZN,"Amazon.com, Inc.",Energy,Coal,338.7,0.43,10.02,7.96,11.33,2.39
+TSLA,"Tesla, Inc.",Energy,Coal,419.01,-6.61,13.91,1.1,17.17,0.32
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,133.05,-7.32,,5.9,5.75,2.54
+BRK.B,Berkshire Hathaway Inc.,Finance,Insurance,458.31,3.18,6.83,0.15,4.07,
+JNJ,Johnson & Johnson,Energy,Renewable Energy,69.58,,10.82,4.91,18.65,0.3
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,270.84,4.73,37.22,5.34,9.91,2.91
+V,Visa Inc.,Technology,Hardware,357.68,,25.82,7.33,19.51,1.64
+AAPL,Apple Inc.,Energy,Oil & Gas,452.44,0.36,34.17,2.53,3.73,0.73
+GOOGL,Alphabet Inc.,Technology,Hardware,132.81,,11.15,5.11,3.99,1.51
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,433.49,1.29,43.46,1.47,7.21,1.67
+AMZN,"Amazon.com, Inc.",Consumer Goods,Household Products,58.58,8.47,47.47,8.71,4.29,0.05
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,393.05,3.48,,5.47,4.82,0.33
+FB,"Meta Platforms, Inc.",Technology,Semiconductors,384.06,9.1,45.11,2.55,1.8,0.87
+BRK.B,Berkshire Hathaway Inc.,Utilities,Gas Utilities,223.96,-4.18,39.49,4.1,17.75,2.89
+JNJ,Johnson & Johnson,Technology,Semiconductors,376.25,7.39,49.4,3.35,7.18,0.69
+JPM,JPMorgan Chase & Co.,Healthcare,Biotechnology,253.67,8.09,7.54,8.13,3.49,1.17
+V,Visa Inc.,Consumer Goods,Household Products,119.78,-1.42,11.82,4.3,14.06,2.07
+AAPL,Apple Inc.,Utilities,Electric Utilities,375.1,8.13,24.71,3.6,8.66,0.97
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,432.63,8.01,28.15,0.25,2.2,1.76
+MSFT,Microsoft Corporation,Industrial Goods,Manufacturing,313.67,0.57,20.51,7.84,3.87,0.11
+AMZN,"Amazon.com, Inc.",Energy,Oil & Gas,238.48,-4.18,47.53,1.62,15.09,2.4
+TSLA,"Tesla, Inc.",Consumer Goods,Food Products,20.81,-6.03,33.93,3.96,12.17,1.66
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,417.7,1.82,24.78,2.85,6.67,0.73
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,481.62,-3.02,18.42,,14.51,2.88
+JNJ,Johnson & Johnson,Consumer Goods,Beverages,498.08,-3.05,11.14,3.12,10.33,0.26
+JPM,JPMorgan Chase & Co.,Technology,Software,327.18,,32.3,5.04,4.42,0.8
+V,Visa Inc.,Healthcare,Biotechnology,,-0.19,37.99,0.46,15.59,
+AAPL,Apple Inc.,Technology,Hardware,364.33,-0.24,25.65,1.96,7.29,0.55
+GOOGL,Alphabet Inc.,Technology,Semiconductors,336.53,-1.69,,7.3,10.86,2.63
+MSFT,Microsoft Corporation,Industrial Goods,Construction,322.45,3.47,35.57,1.09,3.92,1.89
+AMZN,"Amazon.com, Inc.",Consumer Goods,Food Products,204.23,,6.67,0.95,11.58,2.59
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,53.27,2.96,48.54,6.78,19.7,1.3
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,,1.45,18.48,7.84,6.32,1.6
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Construction,226.57,-5.36,46.38,3.9,10.92,2.57
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,120.33,6.74,10.48,3.55,0.29,1.78
+JPM,JPMorgan Chase & Co.,Finance,Insurance,126.23,9.66,22.44,6.48,14.5,1.27
+V,Visa Inc.,Finance,Banks,454.23,-6.79,,8.73,6.27,2.49
+AAPL,Apple Inc.,Energy,Coal,461.6,,48.26,4.49,10.61,0.79
+GOOGL,Alphabet Inc.,Technology,Semiconductors,211.73,7.1,28.48,3.11,9.04,1.27
+MSFT,Microsoft Corporation,Finance,Banks,260.61,-7.7,13.95,,,0.55
+AMZN,"Amazon.com, Inc.",Utilities,Gas Utilities,,-2.02,28.49,5.16,2.77,
+TSLA,"Tesla, Inc.",Consumer Goods,Household Products,479.36,-4.76,,3.63,10.1,2.05
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,,-4.21,35.25,1.12,,2.99
+BRK.B,Berkshire Hathaway Inc.,Finance,Insurance,295.36,-7.51,13.27,5.38,14.34,1.99
+JNJ,Johnson & Johnson,Industrial Goods,Aerospace,88.1,-3.92,15.91,7.42,3.16,0.55
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,142.33,-2.41,9.15,5.66,7.73,0.14
+V,Visa Inc.,Industrial Goods,Aerospace,222.53,-9.94,36.99,5.65,18.76,1.78
+AAPL,Apple Inc.,Technology,Semiconductors,105.8,5.29,,1.1,10.09,2.79
+GOOGL,Alphabet Inc.,Healthcare,Pharmaceuticals,288.03,0.89,44.33,6.76,8.5,1.95
+MSFT,Microsoft Corporation,Finance,Investment Services,38.68,3.99,29.24,,11.34,0.58
+AMZN,"Amazon.com, Inc.",Energy,Renewable Energy,1.6,6.87,28.45,,4.17,0.31
+TSLA,"Tesla, Inc.",Utilities,Electric Utilities,253.43,4.05,48.35,1.44,13.63,0.7
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,380.72,0.54,18.29,,18.31,2.27
+BRK.B,Berkshire Hathaway Inc.,Finance,Banks,406.3,7.91,15.83,,10.75,1.18
+JNJ,Johnson & Johnson,Consumer Goods,Food Products,,2.29,,1.23,3.85,2.45
+JPM,JPMorgan Chase & Co.,Healthcare,Pharmaceuticals,100.21,-4.95,26.97,7.31,9.27,0.38
+V,Visa Inc.,Industrial Goods,Manufacturing,38.11,1.27,7.44,5.88,15.09,0.99
+AAPL,Apple Inc.,Healthcare,Medical Devices,436.17,-8.15,17.61,1.32,18.67,1.28
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,457.41,,36.21,7.36,5.55,0.08
+MSFT,Microsoft Corporation,Energy,Oil & Gas,401.07,1.18,35.67,7.8,8.25,0.43
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,287.49,-1.91,27.15,5.5,4.86,1.13
+TSLA,"Tesla, Inc.",Energy,Renewable Energy,499.25,-8.53,33.93,1.74,16.81,2.74
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,186.54,,36.95,2.46,0.47,1.47
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Food Products,10.16,-1.05,49.38,6.34,7.15,
+JNJ,Johnson & Johnson,Healthcare,Pharmaceuticals,292.77,6.84,16.69,6.53,2.46,0.88
+JPM,JPMorgan Chase & Co.,Energy,Renewable Energy,,2.96,27.3,4.53,16.97,0.88
+V,Visa Inc.,Utilities,Gas Utilities,211.94,-8.28,31.91,0.27,12.62,2.02
+AAPL,Apple Inc.,Consumer Goods,Beverages,355.56,4.25,25.0,,16.86,2.35
+GOOGL,Alphabet Inc.,Healthcare,Biotechnology,312.59,-6.6,43.99,5.52,18.09,0.01
+MSFT,Microsoft Corporation,Healthcare,Medical Devices,260.73,-5.33,26.78,4.6,13.86,0.01
+AMZN,"Amazon.com, Inc.",Finance,Banks,405.28,-8.71,47.9,,8.02,1.52
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,,4.44,16.66,0.57,,0.03
+FB,"Meta Platforms, Inc.",Utilities,Gas Utilities,,-2.87,21.95,8.46,14.3,2.01
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,21.16,,,3.24,14.35,1.49
+JNJ,Johnson & Johnson,Healthcare,Medical Devices,468.84,5.44,39.39,9.12,11.61,1.18
+JPM,JPMorgan Chase & Co.,Consumer Goods,Beverages,110.71,-0.39,49.87,3.28,2.42,
+V,Visa Inc.,Utilities,Gas Utilities,128.25,2.23,12.19,3.9,1.81,1.74
+AAPL,Apple Inc.,Utilities,Electric Utilities,13.6,3.59,35.68,6.01,17.2,0.24
+GOOGL,Alphabet Inc.,Industrial Goods,Manufacturing,395.99,-4.35,17.99,8.64,,0.7
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,111.18,7.58,35.34,4.99,4.3,1.02
+AMZN,"Amazon.com, Inc.",Healthcare,Medical Devices,308.8,-8.06,,1.91,7.33,
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,323.77,-0.21,29.88,5.03,1.17,2.21
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,422.84,4.64,23.73,8.89,7.09,1.9
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Food Products,146.3,,41.25,7.23,15.78,1.14
+JNJ,Johnson & Johnson,Consumer Goods,Food Products,,0.29,14.62,1.88,19.07,2.45
+JPM,JPMorgan Chase & Co.,Technology,Software,94.83,-4.45,,7.85,19.78,0.55
+V,Visa Inc.,Energy,Renewable Energy,315.53,,31.55,2.41,4.39,1.67
+AAPL,Apple Inc.,Technology,Hardware,137.01,-6.03,13.94,1.31,12.26,2.06
+GOOGL,Alphabet Inc.,Consumer Goods,Food Products,170.05,-7.87,35.72,1.36,5.95,1.5
+MSFT,Microsoft Corporation,Healthcare,Pharmaceuticals,209.56,-3.43,42.47,,19.0,1.26
+AMZN,"Amazon.com, Inc.",Technology,Software,208.82,-6.27,6.66,6.87,,2.76
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,430.41,0.69,,9.44,4.4,2.38
+FB,"Meta Platforms, Inc.",Technology,Semiconductors,,-4.63,42.85,8.08,11.62,1.94
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,471.96,3.43,24.43,0.58,12.2,0.63
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,252.57,,40.04,2.74,2.05,0.71
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,62.06,2.68,,9.64,0.24,
+V,Visa Inc.,Industrial Goods,Construction,79.16,4.74,38.36,8.42,7.61,0.04
+AAPL,Apple Inc.,Utilities,Electric Utilities,311.56,,41.36,6.91,2.32,1.47
+GOOGL,Alphabet Inc.,Industrial Goods,Aerospace,212.08,-9.86,11.0,5.79,9.93,1.09
+MSFT,Microsoft Corporation,Energy,Coal,454.39,-0.98,28.78,6.56,1.45,2.34
+AMZN,"Amazon.com, Inc.",Energy,Renewable Energy,,0.92,42.28,2.13,14.22,1.26
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,119.63,-1.2,18.18,,8.04,0.08
+FB,"Meta Platforms, Inc.",Industrial Goods,Construction,493.55,-7.61,17.26,6.82,4.82,0.09
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Manufacturing,,7.18,11.87,0.97,4.36,0.01
+JNJ,Johnson & Johnson,Finance,Insurance,306.53,-8.28,39.27,5.16,11.46,2.0
+JPM,JPMorgan Chase & Co.,Utilities,Electric Utilities,306.07,9.05,16.56,,9.16,1.93
+V,Visa Inc.,Utilities,Gas Utilities,155.0,4.37,13.79,4.08,16.14,1.84
+AAPL,Apple Inc.,Utilities,Gas Utilities,120.64,4.83,48.8,2.0,15.66,0.13
+GOOGL,Alphabet Inc.,Finance,Banks,111.77,2.77,,1.71,17.76,2.62
+MSFT,Microsoft Corporation,Consumer Goods,Household Products,493.18,6.33,37.84,5.89,15.42,2.84
+AMZN,"Amazon.com, Inc.",Technology,Software,,-0.3,17.33,2.99,17.5,1.9
+TSLA,"Tesla, Inc.",Consumer Goods,Food Products,433.12,-3.03,24.39,4.19,8.86,2.67
+FB,"Meta Platforms, Inc.",Finance,Investment Services,,3.99,14.22,9.42,0.59,1.0
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,361.49,0.46,24.01,6.92,19.47,
+JNJ,Johnson & Johnson,Utilities,Water Utilities,309.76,0.1,44.24,3.99,0.35,0.85
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,467.3,-0.9,23.14,,14.69,2.08
+V,Visa Inc.,Consumer Goods,Household Products,138.3,-4.6,,3.03,15.39,1.93
+AAPL,Apple Inc.,Healthcare,Pharmaceuticals,335.52,-0.33,27.81,6.61,16.32,
+GOOGL,Alphabet Inc.,Energy,Coal,306.17,-8.21,36.97,3.9,16.77,2.83
+MSFT,Microsoft Corporation,Utilities,Water Utilities,377.4,-4.05,14.07,1.27,10.61,0.02
+AMZN,"Amazon.com, Inc.",Utilities,Water Utilities,390.06,-5.93,32.57,6.44,10.16,2.99
+TSLA,"Tesla, Inc.",Utilities,Water Utilities,226.81,4.4,44.04,7.77,4.91,0.96
+FB,"Meta Platforms, Inc.",Utilities,Water Utilities,,3.3,12.92,7.59,0.41,0.34
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Manufacturing,323.59,-3.0,48.25,,19.81,0.04
+JNJ,Johnson & Johnson,Energy,Renewable Energy,97.63,4.08,39.79,1.24,,2.88
+JPM,JPMorgan Chase & Co.,Consumer Goods,Beverages,360.62,6.18,28.57,2.64,2.92,0.48
+V,Visa Inc.,Technology,Hardware,368.55,7.02,9.44,2.53,2.8,1.39
+AAPL,Apple Inc.,Consumer Goods,Beverages,,7.46,29.9,6.08,7.4,0.18
+GOOGL,Alphabet Inc.,Finance,Investment Services,343.36,,18.95,0.15,14.72,0.02
+MSFT,Microsoft Corporation,Energy,Renewable Energy,170.29,-4.32,38.12,8.37,14.35,1.92
+AMZN,"Amazon.com, Inc.",Utilities,Gas Utilities,371.16,7.12,27.83,,17.11,0.7
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,140.97,1.8,44.85,6.37,4.91,2.59
+FB,"Meta Platforms, Inc.",Technology,Hardware,401.66,-3.85,39.72,6.48,5.36,0.64
+BRK.B,Berkshire Hathaway Inc.,Technology,Semiconductors,479.14,-2.95,17.78,6.47,12.75,0.34
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,496.72,3.16,41.13,9.59,1.67,0.49
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,,2.93,28.8,3.65,3.97,1.97
+V,Visa Inc.,Technology,Software,308.68,-6.47,41.28,6.58,6.75,
+AAPL,Apple Inc.,Industrial Goods,Aerospace,80.87,-9.4,34.62,6.34,4.29,0.45
+GOOGL,Alphabet Inc.,Finance,Banks,306.86,-2.67,39.56,5.36,4.32,1.4
+MSFT,Microsoft Corporation,Consumer Goods,Beverages,53.79,,,9.54,,2.03
+AMZN,"Amazon.com, Inc.",Technology,Semiconductors,12.96,9.78,18.32,6.24,5.74,
+TSLA,"Tesla, Inc.",Healthcare,Biotechnology,332.72,-8.62,31.48,1.8,,
+FB,"Meta Platforms, Inc.",Consumer Goods,Food Products,109.76,-2.52,32.35,9.86,7.15,0.17
+BRK.B,Berkshire Hathaway Inc.,Technology,Semiconductors,196.29,-9.52,47.26,1.18,,1.15
+JNJ,Johnson & Johnson,Utilities,Electric Utilities,157.43,0.92,34.01,7.36,3.82,0.31
+JPM,JPMorgan Chase & Co.,Technology,Hardware,,-1.2,42.68,4.96,2.23,0.44
+V,Visa Inc.,Finance,Investment Services,108.51,8.51,28.17,,19.92,1.15
+AAPL,Apple Inc.,Industrial Goods,Aerospace,,2.39,39.92,9.43,18.31,2.82
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,237.09,,40.76,8.11,14.32,0.25
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,277.95,0.22,21.39,4.47,2.34,2.5
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,494.95,-7.08,29.42,8.67,9.11,
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,423.02,7.12,34.35,2.2,14.64,2.94
+FB,"Meta Platforms, Inc.",Industrial Goods,Manufacturing,306.21,-3.88,11.99,6.23,11.77,1.01
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Food Products,263.11,-5.91,37.45,4.22,14.87,1.23
+JNJ,Johnson & Johnson,Finance,Investment Services,57.24,-7.13,17.26,5.94,15.08,0.82
+JPM,JPMorgan Chase & Co.,Healthcare,Biotechnology,36.64,-0.33,28.35,,8.48,1.34
+V,Visa Inc.,Consumer Goods,Household Products,418.17,-7.88,29.45,2.75,14.55,0.0
+AAPL,Apple Inc.,Utilities,Electric Utilities,319.65,-7.37,,3.28,,1.5
+GOOGL,Alphabet Inc.,Technology,Software,,-9.37,15.45,3.46,13.46,0.96
+MSFT,Microsoft Corporation,Finance,Banks,202.65,9.33,25.1,9.28,6.05,1.2
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,,5.96,16.27,0.38,16.16,2.93
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,14.1,-8.69,28.66,1.3,9.27,2.86
+FB,"Meta Platforms, Inc.",Finance,Banks,405.69,5.78,39.69,4.59,14.6,1.16
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,352.82,0.24,46.38,0.91,13.79,2.02
+JNJ,Johnson & Johnson,Healthcare,Biotechnology,142.21,-6.85,17.25,,18.54,2.62
+JPM,JPMorgan Chase & Co.,Consumer Goods,Household Products,1.58,-5.62,46.51,0.17,7.96,2.37
+V,Visa Inc.,Healthcare,Biotechnology,77.22,-9.89,20.15,4.91,14.13,2.34
+AAPL,Apple Inc.,Healthcare,Medical Devices,147.73,-1.87,29.0,,14.39,1.42
+GOOGL,Alphabet Inc.,Healthcare,Biotechnology,126.67,0.87,8.54,5.32,6.14,1.15
+MSFT,Microsoft Corporation,Industrial Goods,Manufacturing,150.53,-3.04,13.44,0.12,3.56,2.42
+AMZN,"Amazon.com, Inc.",Utilities,Electric Utilities,90.45,2.16,5.69,7.92,18.03,1.49
+TSLA,"Tesla, Inc.",Consumer Goods,Food Products,459.82,9.33,12.44,1.47,,2.07
+FB,"Meta Platforms, Inc.",Energy,Renewable Energy,488.19,-3.31,33.35,,5.35,0.5
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,4.76,4.22,26.82,7.01,9.01,1.42
+JNJ,Johnson & Johnson,Industrial Goods,Manufacturing,301.27,8.75,30.16,0.06,17.43,0.85
+JPM,JPMorgan Chase & Co.,Utilities,Gas Utilities,,,21.6,1.74,9.12,
+V,Visa Inc.,Energy,Coal,217.74,-8.41,37.22,5.52,8.75,1.56
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,276.48,5.65,26.25,0.26,,0.25
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,455.24,-6.4,19.13,6.5,11.19,1.96
+AAPL,Apple Inc.,Consumer Goods,Beverages,140.95,-3.18,35.87,4.78,1.72,0.42
+AAPL,Apple Inc.,Industrial Goods,Aerospace,,0.52,,7.68,,
+GOOGL,Alphabet Inc.,Technology,Hardware,202.91,9.04,35.19,3.1,8.14,1.85
+JPM,JPMorgan Chase & Co.,Industrial Goods,Construction,413.19,7.79,31.08,3.13,,1.04
+BRK.B,Berkshire Hathaway Inc.,Finance,Investment Services,204.47,4.52,9.46,7.56,2.3,2.74
+AMZN,"Amazon.com, Inc.",Consumer Goods,Beverages,490.13,6.8,49.57,,16.87,1.22
+V,Visa Inc.,Finance,Banks,454.23,-6.79,,8.73,6.27,2.49
+BRK.B,Berkshire Hathaway Inc.,Utilities,Gas Utilities,220.15,3.4,,9.49,3.67,2.03
+GOOGL,Alphabet Inc.,Consumer Goods,Beverages,441.05,-7.69,31.28,9.54,,0.42
+BRK.B,Berkshire Hathaway Inc.,Consumer Goods,Household Products,300.93,-0.99,,1.84,8.07,0.21
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Biotechnology,131.0,-1.02,11.83,6.78,14.59,1.09
+AMZN,"Amazon.com, Inc.",Healthcare,Pharmaceuticals,494.95,-7.08,29.42,8.67,9.11,
+JPM,JPMorgan Chase & Co.,Finance,Investment Services,467.3,-0.9,23.14,,14.69,2.08
+V,Visa Inc.,Utilities,Gas Utilities,128.25,2.23,12.19,3.9,1.81,1.74
+AAPL,Apple Inc.,Healthcare,Pharmaceuticals,33.92,-7.45,10.05,8.72,18.62,1.42
+AMZN,"Amazon.com, Inc.",Healthcare,Biotechnology,287.49,-1.91,27.15,5.5,4.86,1.13
+GOOGL,Alphabet Inc.,Consumer Goods,Household Products,,-4.23,41.85,2.86,18.8,2.74
+V,Visa Inc.,Industrial Goods,Manufacturing,282.17,3.14,19.91,6.67,18.76,1.96
+V,Visa Inc.,Consumer Goods,Beverages,191.21,,15.71,8.76,13.61,0.84
+TSLA,"Tesla, Inc.",Energy,Oil & Gas,391.33,1.04,,,16.57,2.22
+GOOGL,Alphabet Inc.,Utilities,Electric Utilities,,5.26,14.09,8.4,19.23,0.64
+JNJ,Johnson & Johnson,Finance,Banks,105.64,-0.66,49.11,5.55,18.77,2.44
+AAPL,Apple Inc.,Industrial Goods,Construction,21.02,4.92,15.04,9.39,9.78,1.34
+FB,"Meta Platforms, Inc.",Consumer Goods,Household Products,83.35,-3.53,9.66,8.15,6.01,2.93
+GOOGL,Alphabet Inc.,Industrial Goods,Construction,98.79,2.05,25.19,0.39,5.57,0.06
+BRK.B,Berkshire Hathaway Inc.,Healthcare,Medical Devices,352.82,0.24,46.38,0.91,13.79,2.02
+MSFT,Microsoft Corporation,Healthcare,Biotechnology,111.18,7.58,35.34,4.99,4.3,1.02
+JNJ,Johnson & Johnson,Energy,Renewable Energy,97.63,4.08,39.79,1.24,,2.88
+BRK.B,Berkshire Hathaway Inc.,Technology,Software,199.91,-0.17,14.67,9.07,14.35,0.85
+V,Visa Inc.,Technology,Semiconductors,233.24,0.61,38.93,7.79,12.89,2.82
+GOOGL,Alphabet Inc.,Healthcare,Biotechnology,262.81,9.31,5.19,8.19,6.76,1.95
+V,Visa Inc.,Consumer Goods,Beverages,145.61,8.56,8.95,4.59,,2.7
+AAPL,Apple Inc.,Healthcare,Biotechnology,379.22,2.02,49.26,3.16,3.4,2.21
+JPM,JPMorgan Chase & Co.,Utilities,Water Utilities,166.41,-4.8,7.17,4.06,12.5,2.65
+JNJ,Johnson & Johnson,Utilities,Gas Utilities,129.87,-6.78,13.46,7.25,10.77,2.94
+TSLA,"Tesla, Inc.",Industrial Goods,Manufacturing,15.96,2.12,19.02,4.44,16.39,0.74
+GOOGL,Alphabet Inc.,Industrial Goods,Manufacturing,395.99,-4.35,17.99,8.64,,0.7
+V,Visa Inc.,Consumer Goods,Food Products,341.65,3.11,30.0,2.93,12.46,1.23
+JPM,JPMorgan Chase & Co.,Healthcare,Medical Devices,443.02,7.27,25.33,4.98,6.11,2.99
+BRK.B,Berkshire Hathaway Inc.,Industrial Goods,Manufacturing,253.43,5.09,13.51,9.46,6.92,0.9
+MSFT,Microsoft Corporation,Technology,Software,22.24,5.64,22.14,0.96,11.4,0.84
+TSLA,"Tesla, Inc.",Healthcare,Pharmaceuticals,423.02,7.12,34.35,2.2,14.64,2.94
+V,Visa Inc.,Industrial Goods,Aerospace,251.18,,8.75,5.3,4.37,1.02
+JNJ,Johnson & Johnson,Consumer Goods,Household Products,223.61,-3.54,5.61,7.97,6.63,1.07
+TSLA,"Tesla, Inc.",Industrial Goods,Construction,119.63,-1.2,18.18,,8.04,0.08
+GOOGL,Alphabet Inc.,Utilities,Water Utilities,38.26,,33.09,6.17,5.59,1.34
+V,Visa Inc.,Industrial Goods,Construction,117.11,-1.8,23.38,,4.89,2.91
+JNJ,Johnson & Johnson,Technology,Semiconductors,376.25,7.39,49.4,3.35,7.18,0.69
