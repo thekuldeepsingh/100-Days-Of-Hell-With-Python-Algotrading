@@ -19,7 +19,7 @@ A beginner-friendly Python program that tracks stock portfolio performance and c
 
 ## 🚀 Live Demo
 
-Try it instantly on Replit: [Stock Portfolio Calculator](https://replit.com/@YourUsername/StockPortfolioCalculator)
+Try it instantly on Replit: [Stock Portfolio Calculator](https://replit.com/@rathorekuldeeps/stockportfoliocalculatorbasic)
 
 ## 📋 Prerequisites
 
