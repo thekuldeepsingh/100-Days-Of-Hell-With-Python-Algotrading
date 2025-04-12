@@ -7,7 +7,13 @@
 
 A beginner-friendly Python program that tracks stock portfolio performance and calculates key metrics. This project demonstrates fundamental Python concepts from Chapter 3 of [Practical Python for Effective Algorithmic Trading](https://www.amazon.com/dp/B0F3S8FQ7C).
 
+## 🤝 Community Support
 
+Join [The Quantitative Elite Community](https://www.skool.com/the-quantitative-elite) to:
+- Share your implementation
+- Get help with customizations
+- Connect with other algorithmic traders
+- Learn advanced Python trading techniques
 
 ## 🌟 Features
 
@@ -19,7 +25,7 @@ A beginner-friendly Python program that tracks stock portfolio performance and c
 
 ## 🚀 Live Demo
 
-Try it instantly on Replit: [Stock Portfolio Calculator](https://replit.com/@rathorekuldeeps/stockportfoliocalculatorbasic)
+Try it instantly on Replit: [Stock Portfolio Calculator](https://replit.com/refer/rathorekuldeeps)
 
 ## 📋 Prerequisites
 
@@ -30,7 +36,7 @@ Try it instantly on Replit: [Stock Portfolio Calculator](https://replit.com/@rat
 ## ⚡ Quick Deploy to Replit (No Installation Required)
 
 1. **Create a Replit Account**:
-   - Go to [replit.com](https://replit.com) and sign up for a free account
+   - Go to [replit.com](https://replit.com/refer/rathorekuldeeps) and sign up for a free account
 
 2. **Create a New Repl**:
    - Click the "+ Create Repl" button
@@ -138,13 +144,7 @@ This project is part of a learning path for algorithmic trading with Python:
 
 Follow along with the complete guide in the book to build increasingly sophisticated trading tools.
 
-## 🤝 Community Support
 
-Join [The Quantitative Elite Community](https://www.skool.com/the-quantitative-elite) to:
-- Share your implementation
-- Get help with customizations
-- Connect with other algorithmic traders
-- Learn advanced Python trading techniques
 
 ## 📝 License
 
