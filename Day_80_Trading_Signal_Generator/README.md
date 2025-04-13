@@ -27,7 +27,7 @@ Join [The Quantitative Elite Community](https://www.skool.com/the-quantitative-e
 
 ## 🚀 Live Demo
 
-Try it instantly on Replit: [Trading Signal Generator](https://replit.com/refer/rathorekuldeeps)
+Try it instantly on Replit: [Trading Signal Generator](https://replit.com/@rathorekuldeeps/Trading-Signal-Generator-Basic)
 
 ## 📋 Prerequisites
 
