@@ -163,7 +163,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Based on concepts from [Practical Python for Effective Algorithmic Trading](https://www.amazon.com/dp/B0F3S8FQ7C)
 - Inspired by real trading systems used by algorithmic traders
-- Learn more on Kuldeep Singh Rathore's [YouTube channel](https://www.youtube.com/c/KuldeepSinghRathore)
+- Learn more on Kuldeep Singh Rathore's [YouTube channel](https://www.youtube.com/@KuldeepSinghAlgo)
 
 ---
 
