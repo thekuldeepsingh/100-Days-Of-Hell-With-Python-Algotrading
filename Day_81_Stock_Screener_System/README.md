@@ -15,6 +15,12 @@ Join over Elite Network Of Algorithmic traders who have transformed their invest
 
 Need personalized support? Join [The Quantitative Elite Community](https://www.skool.com/the-quantitative-elite) where thousands of algorithmic traders share implementations, optimization tips, and market insights daily.
 
+
+
+## 🚀 Run this app live on replit
+
+ [Stock Screener System Live](https://replit.com/@rathorekuldeeps/Stock-Screener-System-) 
+
 ## 🌟 Features
 
 - **Visual Analysis Dashboard**: Color-coded ratings and interactive charts make stock assessment intuitive
@@ -100,7 +106,7 @@ The total score determines the final rating:
 
 1. **Clone or download this repository**:
 
-git clone https://github.com/thekuldeepsingh/stock-screener-system.git
+git clone https://github.com/thekuldeepsingh/Stock-Screener-System-.git
 
 2. **Navigate to the project directory**:
 cd stock-screener-system
