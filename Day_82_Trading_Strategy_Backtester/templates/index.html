@@ -1,0 +1,483 @@
+{% extends "layout.html" %}
+
+{% block title %}Trading Strategy Backtester{% endblock %}
+
+{% block content %}
+<div class="hero bg-primary text-white">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h1 class="display-4 fw-bold mb-3">Trading Strategy Backtester</h1>
+                <p class="lead">Test your moving average crossover strategy with our advanced backtesting engine. Simulate trades, analyze performance, and refine your approach—all in one place.</p>
+                <p class="small mb-4">From the book: <a href="https://www.amazon.com/dp/B0F3S8FQ7C" class="text-white text-decoration-underline">Practical Python for Effective Algorithmic Trading</a></p>
+                <div class="d-flex gap-3 mt-4">
+                    <button class="btn btn-light btn-lg px-4" id="runDefaultBtn">Run Default Test</button>
+                    <a href="#backtester" class="btn btn-outline-light btn-lg px-4">Customize Test</a>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block">
+                <img src="https://cdn.pixabay.com/photo/2021/05/31/06/38/stock-chart-6297530_1280.png" alt="Trading Chart" class="img-fluid rounded shadow" style="max-height: 300px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5" id="backtester">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-light">
+                    <h4 class="mb-0">Strategy Parameters</h4>
+                </div>
+                <div class="card-body">
+                    <form id="backtestForm">
+                        <h5 class="card-title mb-3">Market Simulation</h5>
+                        <div class="mb-3">
+                            <label for="days" class="form-label">Number of Days</label>
+                            <input type="number" class="form-control" id="days" name="days" value="100" min="30" max="1000">
+                            <div class="form-text">How many trading days to simulate</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="start_price" class="form-label">Starting Price</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="start_price" name="start_price" value="100" min="1" step="0.01">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="volatility" class="form-label">Price Volatility</label>
+                            <input type="number" class="form-control" id="volatility" name="volatility" value="0.015" min="0.001" max="0.05" step="0.001">
+                            <div class="form-text">Daily price volatility (0.015 = 1.5%)</div>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <h5 class="card-title mb-3">Moving Averages</h5>
+                        <div class="mb-3">
+                            <label class="form-label">MA Type</label>
+                            <div class="d-flex">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="ma_type" id="sma_type" value="sma" checked>
+                                    <label class="form-check-label" for="sma_type">
+                                        Simple MA
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ma_type" id="ema_type" value="ema">
+                                    <label class="form-check-label" for="ema_type">
+                                        Exponential MA
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="short_period" class="form-label">Short-term MA Period</label>
+                            <input type="number" class="form-control" id="short_period" name="short_period" value="10" min="2" max="100">
+                        </div>
+                        <div class="mb-3">
+                            <label for="long_period" class="form-label">Long-term MA Period</label>
+                            <input type="number" class="form-control" id="long_period" name="long_period" value="30" min="5" max="200">
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <h5 class="card-title mb-3">Trading Settings</h5>
+                        <div class="mb-3">
+                            <label for="initial_capital" class="form-label">Initial Capital</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="initial_capital" name="initial_capital" value="10000" min="1000" step="1000">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="stop_loss" class="form-label">Stop Loss (%)</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="stop_loss" name="stop_loss" value="5" min="0" max="20" step="0.5">
+                                <span class="input-group-text">%</span>
+                            </div>
+                            <div class="form-text">0% to disable stop loss</div>
+                        </div>
+                        
+                        <button type="button" id="runBacktestBtn" class="btn btn-primary w-100 mt-3">
+                            <span class="spinner-border spinner-border-sm d-none" id="loadingSpinner" role="status" aria-hidden="true"></span>
+                            Run Backtest
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm d-none d-lg-block">
+                <div class="card-header bg-light">
+                    <h4 class="mb-0">Strategy Explanation</h4>
+                </div>
+                <div class="card-body">
+                    <h5>Moving Average Crossover</h5>
+                    <p>This strategy uses two moving averages of different lengths to identify potential trend changes:</p>
+                    <ul>
+                        <li><strong>Buy Signal:</strong> When the short-term MA crosses <em>above</em> the long-term MA</li>
+                        <li><strong>Sell Signal:</strong> When the short-term MA crosses <em>below</em> the long-term MA</li>
+                        <li><strong>Stop Loss:</strong> Exits the position if price falls below a specified percentage from entry</li>
+                    </ul>
+                    <p>This approach aims to capture trending movements while managing risk with automatic stop losses.</p>
+                    <p class="text-muted small">Learn more advanced strategies in the book <a href="https://www.amazon.com/dp/B0F3S8FQ7C">Practical Python for Effective Algorithmic Trading</a>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-8">
+            <div id="resultsContainer" class="d-none">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                        <h4 class="mb-0">Performance Summary</h4>
+                        <div>
+                            <button class="btn btn-sm btn-outline-secondary" id="downloadReportBtn">
+                                <i class="fas fa-download me-1"></i> Download Report
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-3 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Initial Capital</h6>
+                                        <h4 id="initialCapital">$10,000.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Final Value</h6>
+                                        <h4 id="finalValue">$0.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Total Return</h6>
+                                        <h4 id="totalReturn">0.00%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Annual Return</h6>
+                                        <h4 id="annualizedReturn">0.00%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row text-center mt-3">
+                            <div class="col-md-2 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Trades</h6>
+                                        <h4 id="totalTrades">0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Win Rate</h6>
+                                        <h4 id="winRate">0.00%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Avg Win</h6>
+                                        <h4 id="avgWin">$0.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Avg Loss</h6>
+                                        <h4 id="avgLoss">$0.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Profit Factor</h6>
+                                        <h4 id="profitFactor">0.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Max Drawdown</h6>
+                                        <h4 id="maxDrawdown">0.00%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-light">
+                                <h4 class="mb-0">Price Chart</h4>
+                            </div>
+                            <div class="card-body p-0">
+                                <div id="priceChart" style="height: 400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-light">
+                                <h4 class="mb-0">Equity Curve</h4>
+                            </div>
+                            <div class="card-body p-0">
+                                <div id="equityChart" style="height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-light">
+                                <h4 class="mb-0">Drawdown</h4>
+                            </div>
+                            <div class="card-body p-0">
+                                <div id="drawdownChart" style="height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-light">
+                        <h4 class="mb-0">Trade History</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Entry Date</th>
+                                        <th>Entry Price</th>
+                                        <th>Exit Date</th>
+                                        <th>Exit Price</th>
+                                        <th>Shares</th>
+                                        <th>P/L ($)</th>
+                                        <th>P/L (%)</th>
+                                        <th>Duration</th>
+                                        <th>Exit Reason</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tradeHistory">
+                                    <!-- Trade rows will be inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fas fa-lightbulb fa-2x"></i>
+                        </div>
+                        <div>
+                            <strong>Want to take your trading strategies to the next level?</strong>
+                            <p class="mb-0 mt-1">Join our community at <a href="https://www.skool.com/the-quantitative-elite" target="_blank">The Quantitative Elite</a> to learn advanced techniques and get support from fellow algorithmic traders. You can also check out the <a href="https://www.amazon.com/dp/B0F3S8FQ7C" target="_blank">book</a> for in-depth explanations and more sophisticated strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="initialMessage" class="text-center py-5">
+                <div class="mb-4">
+                    <i class="fas fa-chart-line fa-4x text-secondary"></i>
+                </div>
+                <h3>Configure your strategy parameters</h3>
+                <p class="text-muted">Set your desired parameters on the left and click "Run Backtest" to see the results here.</p>
+                <p class="mt-4"><button class="btn btn-primary" id="runDefaultBtn2">Or try with default settings</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2>Why Use This Backtester?</h2>
+                <ul class="list-group list-group-flush mt-3">
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Test your trading strategy on simulated market data</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Visualize trades with interactive charts</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Calculate key performance metrics</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Customize parameters to optimize results</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Based on proven algorithmic trading techniques</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Next Steps</h2>
+                <p>Ready to advance your algorithmic trading skills? Here's how to continue your journey:</p>
+                <div class="d-grid gap-3">
+                    <a href="https://www.amazon.com/dp/B0F3S8FQ7C" class="btn btn-outline-primary" target="_blank">
+                        <i class="fas fa-book me-2"></i> Get the Complete Book
+                    </a>
+                    <a href="https://www.skool.com/the-quantitative-elite" class="btn btn-outline-primary" target="_blank">
+                        <i class="fas fa-users me-2"></i> Join the Trading Community
+                    </a>
+                    <a href="https://www.youtube.com/@KuldeepSinghAlgo" class="btn btn-outline-primary" target="_blank">
+                        <i class="fab fa-youtube me-2"></i> Watch Video Tutorials
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Run backtest with default parameters or custom parameters
+        $("#runBacktestBtn, #runDefaultBtn, #runDefaultBtn2").click(function() {
+            // Show loading spinner
+            $("#loadingSpinner").removeClass("d-none");
+            $("#runBacktestBtn").prop("disabled", true);
+            
+            // Prepare form data
+            let formData = {};
+            if (this.id === "runDefaultBtn" || this.id === "runDefaultBtn2") {
+                // Use default values
+                formData = {
+                    days: 100,
+                    start_price: 100,
+                    volatility: 0.015,
+                    short_period: 10,
+                    long_period: 30,
+                    initial_capital: 10000,
+                    stop_loss: 5,
+                    ma_type: "sma"
+                };
+            } else {
+                // Get form values
+                $("#backtestForm").serializeArray().forEach(function(field) {
+                    formData[field.name] = field.value;
+                });
+            }
+            
+            // Make AJAX request
+            $.ajax({
+                url: "/api/backtest",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(formData),
+                success: function(response) {
+                    // Hide loading elements
+                    $("#loadingSpinner").addClass("d-none");
+                    $("#runBacktestBtn").prop("disabled", false);
+                    $("#initialMessage").addClass("d-none");
+                    $("#resultsContainer").removeClass("d-none");
+                    
+                    // Update performance metrics
+                    $("#initialCapital").text(response.metrics.initial_capital);
+                    $("#finalValue").text(response.metrics.final_value);
+                    
+                    // Style positive/negative returns
+                    if (response.metrics.total_return_class === "positive") {
+                        $("#totalReturn").text(response.metrics.total_return).addClass("text-success").removeClass("text-danger");
+                    } else {
+                        $("#totalReturn").text(response.metrics.total_return).addClass("text-danger").removeClass("text-success");
+                    }
+                    
+                    if (response.metrics.annualized_return_class === "positive") {
+                        $("#annualizedReturn").text(response.metrics.annualized_return).addClass("text-success").removeClass("text-danger");
+                    } else {
+                        $("#annualizedReturn").text(response.metrics.annualized_return).addClass("text-danger").removeClass("text-success");
+                    }
+                    
+                    // Update trade statistics
+                    $("#totalTrades").text(response.metrics.total_trades);
+                    $("#winRate").text(response.metrics.win_rate);
+                    $("#avgWin").text(response.metrics.avg_win);
+                    $("#avgLoss").text(response.metrics.avg_loss);
+                    $("#profitFactor").text(response.metrics.profit_factor);
+                    $("#maxDrawdown").text(response.metrics.max_drawdown);
+                    
+                    // Update trade history table
+                    const tradeHistoryBody = $("#tradeHistory");
+                    tradeHistoryBody.empty();
+                    
+                    response.trades.forEach(function(trade) {
+                        const row = $("<tr></tr>");
+                        row.append(`<td>${trade.entry_date}</td>`);
+                        row.append(`<td>${trade.entry_price}</td>`);
+                        row.append(`<td>${trade.exit_date}</td>`);
+                        row.append(`<td>${trade.exit_price}</td>`);
+                        row.append(`<td>${trade.shares}</td>`);
+                        
+                        if (trade.profit_loss_class === "positive") {
+                            row.append(`<td class="text-success">${trade.profit_loss}</td>`);
+                            row.append(`<td class="text-success">${trade.profit_loss_percent}</td>`);
+                        } else {
+                            row.append(`<td class="text-danger">${trade.profit_loss}</td>`);
+                            row.append(`<td class="text-danger">${trade.profit_loss_percent}</td>`);
+                        }
+                        
+                        row.append(`<td>${trade.duration}</td>`);
+                        row.append(`<td>${trade.exit_reason}</td>`);
+                        
+                        tradeHistoryBody.append(row);
+                    });
+                    
+                    // Draw charts
+                    Plotly.newPlot('priceChart', JSON.parse(response.charts.price_chart).data, JSON.parse(response.charts.price_chart).layout);
+                    Plotly.newPlot('equityChart', JSON.parse(response.charts.equity_chart).data, JSON.parse(response.charts.equity_chart).layout);
+                    Plotly.newPlot('drawdownChart', JSON.parse(response.charts.drawdown_chart).data, JSON.parse(response.charts.drawdown_chart).layout);
+                    
+                    // Scroll to results
+                    $('html, body').animate({
+                        scrollTop: $("#resultsContainer").offset().top - 20
+                    }, 500);
+                },
+                error: function(xhr, status, error) {
+                    // Hide loading elements
+                    $("#loadingSpinner").addClass("d-none");
+                    $("#runBacktestBtn").prop("disabled", false);
+                    
+                    // Show error
+                    alert("Error running backtest: " + error);
+                }
+            });
+        });
+        
+        // Form validation - ensure short period is less than long period
+        $("#short_period, #long_period").change(function() {
+            const shortPeriod = parseInt($("#short_period").val());
+            const longPeriod = parseInt($("#long_period").val());
+            
+            if (shortPeriod >= longPeriod) {
+                alert("Short period must be less than long period");
+                $("#short_period").val(longPeriod - 1);
+            }
+        });
+        
+        // Download report functionality
+        $("#downloadReportBtn").click(function() {
+            alert("Report download functionality would be implemented here.");
+            // In a real implementation, this would generate a PDF or CSV report
+        });
+    });
+</script>
+{% endblock %}
