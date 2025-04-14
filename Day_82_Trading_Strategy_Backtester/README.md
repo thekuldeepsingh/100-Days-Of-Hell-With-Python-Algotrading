@@ -32,8 +32,8 @@ Try the application live on Replit: [Stock Strategy Backtester](https://replit.c
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/thekuldeepsingh/Stock-Screener-System-
-   cd Stock-Screener-System-
+   git clone https://github.com/thekuldeepsingh/trading-strategy-backtester.git
+   cd trading-strategy-backtester
    ```
 
 2. **Create and activate a virtual environment (optional but recommended)**
