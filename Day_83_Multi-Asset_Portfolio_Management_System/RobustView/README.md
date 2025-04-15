@@ -33,8 +33,7 @@ Try the application live on Replit: [Multi-Asset Portfolio Management System](ht
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/thekuldeepsingh/Multi_Asset_Portfolio_Management_System
-.git
+   git clone https://github.com/thekuldeepsingh/Multi_Asset_Portfolio_Management_System.git
    cd Multi_Asset_Portfolio_Management_System
 
    ```
