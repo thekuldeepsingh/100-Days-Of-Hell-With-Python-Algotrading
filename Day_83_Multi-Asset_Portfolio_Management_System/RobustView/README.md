@@ -33,8 +33,10 @@ Try the application live on Replit: [Multi-Asset Portfolio Management System](ht
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/thekuldeepsingh/Stock-Screener-System-.git
-   cd Stock-Screener-System-
+   git clone https://github.com/thekuldeepsingh/Multi_Asset_Portfolio_Management_System
+.git
+   cd Multi_Asset_Portfolio_Management_System
+
    ```
 
 2. **Create and activate a virtual environment (optional but recommended)**
@@ -55,11 +57,11 @@ Try the application live on Replit: [Multi-Asset Portfolio Management System](ht
 
 4. **Run the application**
    ```bash
-   python app.py
+   python main.py
    ```
 
 5. **Open your browser**
-   Navigate to `http://localhost:5000`
+   Navigate to `http://localhost:5001`
 
 ## 🔍 Usage
 
