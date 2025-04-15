@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Portfolio</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <button type="button" id="updatePricesBtn" class="btn btn-sm btn-outline-secondary">
+                <i class="fas fa-sync-alt me-1"></i> Update Prices
+                <span id="updateSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+            </button>
+        </div>
+        <a href="{{ url_for('add_security') }}" class="btn btn-sm btn-primary">
+            <i class="fas fa-plus me-1"></i> Add Security
+        </a>
+    </div>
+</div>
+
+<!-- Portfolio Summary -->
+<div class="row mb-4">
+    <div class="col-md-3 mb-3">
+        <div class="card border-0 shadow h-100">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Total Portfolio Value</h6>
+                <h3 class="card-title">${{ "%.2f"|format(summary.total_value) }}</h3>
+                <p class="card-text">
+                    <span class="{% if summary.total_gain_loss >= 0 %}positive{% else %}negative{% endif %}">
+                        <i class="fas {% if summary.total_gain_loss >= 0 %}fa-arrow-up{% else %}fa-arrow-down{% endif %} me-1"></i>
+                        ${{ "%.2f"|format(summary.total_gain_loss) }} 
+                        ({{ "%.2f"|format(summary.total_gain_loss_pct) }}%)
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-9 mb-3">
+        <div class="card border-0 shadow h-100">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-3 text-muted">Asset Allocation</h6>
+                <div class="row">
+                    {% for asset_class, percentage in summary.asset_allocation.items() %}
+                        <div class="col-lg-3 col-md-4 col-6 mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>{{ asset_class }}</span>
+                                <span>{{ "%.1f"|format(percentage) }}%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar asset-{{ asset_class|replace(' ', '-') }}" role="progressbar" 
+                                     style="width: {{ percentage }}%" 
+                                     aria-valuenow="{{ percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="col-12">
+                            <p class="text-muted">No assets in portfolio yet.</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Securities Table -->
+<div class="card border-0 shadow mb-4">
+    <div class="card-header bg-transparent border-0">
+        <h5 class="mb-0">Securities</h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Security</th>
+                        <th>Asset Class</th>
+                        <th>Purchase Price</th>
+                        <th>Current Price</th>
+                        <th>Quantity</th>
+                        <th>Purchase Value</th>
+                        <th>Current Value</th>
+                        <th>Gain/Loss</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for security in securities %}
+                        <tr class="security-row" data-id="{{ security.id }}">
+                            <td>
+                                <strong>{{ security.ticker }}</strong><br>
+                                <small class="text-muted">{{ security.name }}</small>
+                            </td>
+                            <td>
+                                <span class="badge asset-{{ security.asset_class|replace(' ', '-') }}">{{ security.asset_class }}</span>
+                                {% if security.sector %}
+                                    <br><small class="text-muted">{{ security.sector }}</small>
+                                {% endif %}
+                            </td>
+                            <td>${{ "%.2f"|format(security.purchase_price) }}</td>
+                            <td>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control form-control-sm current-price-input" 
+                                           value="{{ "%.2f"|format(security.current_price) }}" 
+                                           step="0.01" min="0">
+                                </div>
+                            </td>
+                            <td>{{ "%.2f"|format(security.quantity) }}</td>
+                            <td>${{ "%.2f"|format(security.purchase_value) }}</td>
+                            <td>${{ "%.2f"|format(security.current_value) }}</td>
+                            <td class="{% if security.gain_loss >= 0 %}positive{% else %}negative{% endif %}">
+                                <i class="fas {% if security.gain_loss >= 0 %}fa-arrow-up{% else %}fa-arrow-down{% endif %} me-1"></i>
+                                ${{ "%.2f"|format(security.gain_loss) }}<br>
+                                <small>{{ "%.2f"|format(security.gain_loss_percentage) }}%</small>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a href="{{ url_for('edit_security', security_id=security.id) }}" 
+                                       class="btn btn-sm btn-outline-secondary" 
+                                       data-bs-toggle="tooltip" title="Edit Security">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <form action="{{ url_for('delete_security', security_id=security.id) }}" method="post" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-outline-danger delete-security-btn" 
+                                                data-bs-toggle="tooltip" title="Delete Security">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="9" class="text-center py-4">
+                                <p>No securities in your portfolio yet.</p>
+                                <a href="{{ url_for('add_security') }}" class="btn btn-primary">
+                                    <i class="fas fa-plus me-1"></i> Add Your First Security
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

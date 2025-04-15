@@ -1,0 +1,260 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Portfolio Analysis</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{{ url_for('reports') }}" class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-file-export me-1"></i> Generate Report
+        </a>
+    </div>
+</div>
+
+<!-- Risk and Performance Analysis -->
+<div class="row mb-4">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow mb-4">
+            <div class="card-header bg-transparent border-0">
+                <h5 class="mb-0">Risk Analysis</h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="text-muted mb-3">Portfolio Risk Profile</h6>
+                        <div class="d-flex align-items-center mb-2">
+                            <h4 class="mb-0 me-2">{{ risk.risk_level }}</h4>
+                            <span class="badge risk-{{ risk.risk_level|replace(' ', '-') }} p-2">
+                                {{ risk.portfolio_risk_score }}
+                            </span>
+                        </div>
+                        <p class="text-muted">
+                            Risk score of <strong>{{ risk.portfolio_risk_score }}</strong> indicates a 
+                            <strong>{{ risk.risk_level }}</strong> risk profile based on your current asset allocation.
+                        </p>
+                        
+                        <div class="mt-4">
+                            <h6 class="text-muted mb-3">Risk Scale</h6>
+                            <div class="d-flex justify-content-between text-muted mb-1">
+                                <small>Low Risk</small>
+                                <small>High Risk</small>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-orange" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <small>1</small>
+                                <small>2</small>
+                                <small>3</small>
+                                <small>4</small>
+                                <small>5</small>
+                                <small>6</small>
+                                <small>7</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <!-- Hidden div to store risk breakdown data for chart -->
+                        <div id="riskBreakdownData" class="d-none">
+                            {{ risk.risk_breakdown|tojson }}
+                        </div>
+                        <div class="risk-chart-container">
+                            <canvas id="riskBreakdownChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h6 class="text-muted mb-3">Risk Metrics</h6>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Value</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Volatility</td>
+                                        <td>{{ "%.2f"|format(metrics.volatility) }}%</td>
+                                        <td>Measures the dispersion of returns (higher = more volatile)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sharpe Ratio</td>
+                                        <td>{{ "%.2f"|format(metrics.sharpe_ratio) }}</td>
+                                        <td>Risk-adjusted return (higher = better risk-adjusted performance)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Asset Class Diversification</td>
+                                        <td>{{ summary.asset_allocation|length }}</td>
+                                        <td>Number of different asset classes in portfolio</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card border-0 shadow mb-4">
+            <div class="card-header bg-transparent border-0">
+                <h5 class="mb-0">Performance Analysis</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-4">
+                    <h6 class="text-muted mb-3">Top Performers</h6>
+                    <ul class="list-group list-group-flush">
+                        {% for security in metrics.top_performers %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>{{ security.ticker }}</strong>
+                                    {% if security.asset_class %}
+                                        <span class="badge asset-{{ security.asset_class|replace(' ', '-') }} ms-2">{{ security.asset_class }}</span>
+                                    {% endif %}
+                                </div>
+                                <span class="badge rounded-pill bg-success">{{ "%.2f"|format(security.gain_loss_pct) }}%</span>
+                            </li>
+                        {% else %}
+                            <li class="list-group-item">No securities data available</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div>
+                    <h6 class="text-muted mb-3">Bottom Performers</h6>
+                    <ul class="list-group list-group-flush">
+                        {% for security in metrics.bottom_performers %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>{{ security.ticker }}</strong>
+                                    {% if security.asset_class %}
+                                        <span class="badge asset-{{ security.asset_class|replace(' ', '-') }} ms-2">{{ security.asset_class }}</span>
+                                    {% endif %}
+                                </div>
+                                <span class="badge rounded-pill bg-danger">{{ "%.2f"|format(security.gain_loss_pct) }}%</span>
+                            </li>
+                        {% else %}
+                            <li class="list-group-item">No securities data available</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card border-0 shadow">
+            <div class="card-header bg-transparent border-0">
+                <h5 class="mb-0">Portfolio Diversification</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="sectorAllocationChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Recommendations -->
+<div class="card border-0 shadow mb-4">
+    <div class="card-header bg-transparent border-0">
+        <h5 class="mb-0">Recommendations</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <h6 class="text-muted mb-3">Diversification Tips</h6>
+                <ul class="list-group list-group-flush">
+                    {% if summary.asset_allocation|length < 3 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                            <strong>Limited Asset Diversification:</strong> Your portfolio contains only {{ summary.asset_allocation|length }} asset class(es). 
+                            Consider adding investments in different asset classes to reduce risk.
+                        </li>
+                    {% else %}
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Good Asset Diversification:</strong> Your portfolio contains {{ summary.asset_allocation|length }} different asset classes.
+                        </li>
+                    {% endif %}
+                    
+                    {% if summary.sector_allocation|length < 4 and summary.securities_count > 2 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                            <strong>Limited Sector Diversification:</strong> Your portfolio is concentrated in few sectors.
+                            Consider adding investments across more industry sectors.
+                        </li>
+                    {% elif summary.sector_allocation|length >= 4 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Good Sector Diversification:</strong> Your portfolio spans {{ summary.sector_allocation|length }} different sectors.
+                        </li>
+                    {% endif %}
+                    
+                    {% for asset_class, percentage in summary.asset_allocation.items() %}
+                        {% if percentage > 50 %}
+                            <li class="list-group-item">
+                                <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                <strong>Heavy {{ asset_class }} Concentration:</strong> {{ asset_class }} makes up {{ "%.1f"|format(percentage) }}% of your portfolio.
+                                Consider reducing exposure to diversify risk.
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="col-lg-6">
+                <h6 class="text-muted mb-3">Risk Management Tips</h6>
+                <ul class="list-group list-group-flush">
+                    {% if risk.portfolio_risk_score > 5 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                            <strong>High Risk Profile:</strong> Your portfolio has a risk score of {{ risk.portfolio_risk_score }}.
+                            Consider adding more conservative investments to balance risk.
+                        </li>
+                    {% elif risk.portfolio_risk_score < 2 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-info-circle text-info me-2"></i>
+                            <strong>Conservative Profile:</strong> Your portfolio has a low risk score of {{ risk.portfolio_risk_score }}.
+                            Consider adding some growth assets if appropriate for your goals.
+                        </li>
+                    {% else %}
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Balanced Risk Profile:</strong> Your portfolio has a moderate risk score of {{ risk.portfolio_risk_score }}.
+                        </li>
+                    {% endif %}
+                    
+                    {% if metrics.sharpe_ratio < 0.5 and summary.securities_count > 1 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                            <strong>Low Risk-Adjusted Returns:</strong> Your portfolio's Sharpe ratio is {{ "%.2f"|format(metrics.sharpe_ratio) }}.
+                            Consider reviewing underperforming assets.
+                        </li>
+                    {% elif metrics.sharpe_ratio > 1.0 %}
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Good Risk-Adjusted Returns:</strong> Your portfolio's Sharpe ratio of {{ "%.2f"|format(metrics.sharpe_ratio) }} 
+                            indicates good performance relative to risk.
+                        </li>
+                    {% endif %}
+                    
+                    <li class="list-group-item">
+                        <i class="fas fa-info-circle text-info me-2"></i>
+                        <strong>Regular Review:</strong> Schedule periodic reviews of your portfolio to ensure it remains aligned with your goals.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

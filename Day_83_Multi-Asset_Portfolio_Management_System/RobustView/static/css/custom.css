@@ -1,0 +1,186 @@
+/* Custom styles for Portfolio Management System */
+
+/* Dashboard cards */
+.dashboard-card {
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-card .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Performance indicators */
+.positive {
+    color: var(--bs-success);
+}
+
+.negative {
+    color: var(--bs-danger);
+}
+
+.neutral {
+    color: var(--bs-warning);
+}
+
+/* Chart containers */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.risk-chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Adding some spacing and styling for the main content area */
+.main-content {
+    padding-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        padding-top: 1rem;
+    }
+    
+    .sidebar-sticky {
+        height: auto;
+    }
+    
+    .main-content {
+        padding-top: 1rem;
+    }
+    
+    .chart-container,
+    .risk-chart-container {
+        height: 250px;
+    }
+}
+
+/* Table styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    background-color: var(--bs-dark);
+    z-index: 1;
+}
+
+/* Custom badge styling */
+.badge-asset {
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+}
+
+/* Asset class colors */
+.asset-Stock {
+    background-color: var(--bs-primary);
+}
+
+.asset-ETF {
+    background-color: var(--bs-info);
+}
+
+.asset-Bonds, .asset-Government-Bonds, .asset-Corporate-Bonds, .asset-Municipal-Bonds {
+    background-color: var(--bs-success);
+}
+
+.asset-Cash {
+    background-color: var(--bs-warning);
+}
+
+.asset-Cryptocurrency {
+    background-color: var(--bs-danger);
+}
+
+.asset-Real-Estate {
+    background-color: var(--bs-purple);
+}
+
+.asset-Commodity {
+    background-color: var(--bs-orange);
+}
+
+.asset-Other {
+    background-color: var(--bs-secondary);
+}
+
+/* Risk level indicators */
+.risk-Very-Low {
+    background-color: var(--bs-success);
+}
+
+.risk-Low {
+    background-color: var(--bs-info);
+}
+
+.risk-Moderate, .risk-Medium {
+    background-color: var(--bs-warning);
+}
+
+.risk-Medium-High, .risk-High {
+    background-color: var(--bs-orange);
+}
+
+.risk-Very-High {
+    background-color: var(--bs-danger);
+}
+
+/* Form styling */
+.form-label {
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Add some padding to the page bottom */
+.pb-6 {
+    padding-bottom: 4rem !important;
+}
+
+/* Tooltips */
+.tooltip-inner {
+    max-width: 300px;
+}

@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">{{ 'Edit' if edit else 'Add' }} Security</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{{ url_for('portfolio') }}" class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-arrow-left me-1"></i> Back to Portfolio
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card border-0 shadow">
+            <div class="card-body p-4">
+                <form method="post" action="{{ url_for('edit_security', security_id=security.id) if edit else url_for('add_security') }}">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="ticker" class="form-label">Ticker Symbol *</label>
+                                <input type="text" class="form-control" id="ticker" name="ticker" 
+                                       placeholder="e.g., AAPL" required
+                                       value="{{ security.ticker if edit else '' }}"
+                                       {{ 'readonly' if edit else '' }}>
+                                <div class="form-text">Stock symbol or unique identifier</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" 
+                                       placeholder="e.g., Apple Inc." required
+                                       value="{{ security.name if edit else '' }}">
+                                <div class="form-text">Full name of the security</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="asset_class" class="form-label">Asset Class *</label>
+                                <select class="form-select" id="asset_class" name="asset_class" required>
+                                    <option value="" disabled {{ 'selected' if not edit }}>Select asset class</option>
+                                    {% for asset_class in asset_classes %}
+                                        <option value="{{ asset_class }}" {{ 'selected' if edit and security.asset_class == asset_class else '' }}>
+                                            {{ asset_class }}
+                                        </option>
+                                    {% endfor %}
+                                </select>
+                                <div class="form-text">Type of investment</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="sector" class="form-label">Sector</label>
+                                <input type="text" class="form-control" id="sector" name="sector" 
+                                       placeholder="e.g., Technology"
+                                       value="{{ security.sector if edit else '' }}">
+                                <div class="form-text">Industry sector (optional)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="purchase_price" class="form-label">Purchase Price *</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control" id="purchase_price" name="purchase_price" 
+                                           step="0.01" min="0" required
+                                           value="{{ "%.2f"|format(security.purchase_price) if edit else '' }}"
+                                           {{ 'readonly' if edit else '' }}>
+                                </div>
+                                <div class="form-text">Price paid per unit</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="current_price" class="form-label">Current Price *</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control" id="current_price" name="current_price" 
+                                           step="0.01" min="0" required
+                                           value="{{ "%.2f"|format(security.current_price) if edit else '' }}">
+                                </div>
+                                <div class="form-text">Current market price</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="quantity" class="form-label">Quantity *</label>
+                                <input type="number" class="form-control" id="quantity" name="quantity" 
+                                       step="0.01" min="0" required
+                                       value="{{ "%.2f"|format(security.quantity) if edit else '' }}">
+                                <div class="form-text">Number of units</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="purchase_date" class="form-label">Purchase Date *</label>
+                                <input type="date" class="form-control" id="purchase_date" name="purchase_date" required
+                                       value="{{ security.purchase_date.strftime('%Y-%m-%d') if edit else '' }}"
+                                       {{ 'readonly' if edit else '' }}>
+                                <div class="form-text">Date of purchase</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="country" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="country" name="country" 
+                                       placeholder="e.g., USA"
+                                       value="{{ security.country if edit else '' }}">
+                                <div class="form-text">Country of origin (optional)</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="currency" class="form-label">Currency</label>
+                                <input type="text" class="form-control" id="currency" name="currency" 
+                                       placeholder="e.g., USD" value="{{ security.currency if edit else 'USD' }}">
+                                <div class="form-text">Currency code (default: USD)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="notes" class="form-label">Notes</label>
+                        <textarea class="form-control" id="notes" name="notes" rows="3">{{ security.notes if edit else '' }}</textarea>
+                        <div class="form-text">Additional information (optional)</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{ url_for('portfolio') }}" class="btn btn-outline-secondary me-md-2">Cancel</a>
+                        <button type="submit" class="btn btn-primary">
+                            {{ 'Update Security' if edit else 'Add Security' }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

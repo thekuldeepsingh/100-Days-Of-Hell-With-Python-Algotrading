@@ -18,7 +18,7 @@ A full-featured web application for backtesting moving average crossover trading
 
 ## 🔥 Demo
 
-Try the application live on Replit: [Stock Strategy Backtester](https://replit.com/@rathorekuldeeps/Stock-Screener-System-)
+Try the application live on Replit: [Stock Strategy Backtester](https://replit.com/@rathorekuldeeps/trading-strategy-backtester)
 
 ## 📋 Prerequisites
 

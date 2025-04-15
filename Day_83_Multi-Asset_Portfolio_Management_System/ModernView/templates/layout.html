@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Multi-Asset Portfolio Management System{% endblock %}</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #0e4a89;
+            --primary-dark: #05346a;
+            --secondary-color: #475569;
+            --light-gray: #f8fafc;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --info-color: #3b82f6;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #1e293b;
+            background-color: #f9fafb;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+        
+        .hero {
+            background: linear-gradient(120deg, var(--primary-color), var(--primary-dark));
+            border-radius: 0 0 2rem 2rem;
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-header {
+            font-weight: 600;
+            padding: 1rem 1.25rem;
+            background-color: rgba(241, 245, 249, 0.5);
+        }
+        
+        .card-stats {
+            text-align: center;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .card-stats:hover {
+            background-color: #f1f5f9;
+        }
+        
+        .stats-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--info-color);
+        }
+        
+        .stats-icon.success {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--success-color);
+        }
+        
+        .stats-icon.warning {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: var(--warning-color);
+        }
+        
+        .stats-icon.danger {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: var(--danger-color);
+        }
+        
+        .stats-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .stats-label {
+            color: var(--secondary-color);
+            font-size: 0.875rem;
+        }
+        
+        .table th {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        
+        .text-success {
+            color: var(--success-color) !important;
+        }
+        
+        .text-danger {
+            color: var(--danger-color) !important;
+        }
+        
+        .text-warning {
+            color: var(--warning-color) !important;
+        }
+        
+        .progress {
+            height: 0.75rem;
+            border-radius: 0.5rem;
+        }
+        
+        .allocation-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 3rem 0;
+        }
+        
+        .footer a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+        }
+        
+        .sidebar .nav-link {
+            color: var(--secondary-color);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .sidebar .nav-link:hover, .sidebar .nav-link.active {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--primary-color);
+        }
+        
+        .sidebar .nav-link i {
+            width: 1.5rem;
+        }
+        
+        /* Fancy animations */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                border-radius: 0 0 1rem 1rem;
+                text-align: center;
+            }
+            
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+    
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-chart-pie me-2"></i>Portfolio Manager
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio-dashboard"><i class="fas fa-chart-line me-1"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/watchlist"><i class="fas fa-eye me-1"></i>Watchlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/add-security"><i class="fas fa-plus-circle me-1"></i>Add Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><i class="fas fa-info-circle me-1"></i>About</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-sm btn-light" href="https://www.amazon.com/dp/B0F3S8FQ7C" target="_blank">
+                            <i class="fas fa-book me-1"></i> Get the Book
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer mt-auto py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Multi-Asset Portfolio Manager</h5>
+                    <p class="mb-0">A comprehensive tool for managing diverse investment portfolios, based on concepts from the book "Practical Python for Effective Algorithmic Trading".</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/"><i class="fas fa-home me-1"></i> Home</a></li>
+                        <li class="mb-2"><a href="/portfolio-dashboard"><i class="fas fa-chart-line me-1"></i> Portfolio</a></li>
+                        <li class="mb-2"><a href="/watchlist"><i class="fas fa-eye me-1"></i> Watchlist</a></li>
+                        <li class="mb-2"><a href="/add-security"><i class="fas fa-plus-circle me-1"></i> Add Security</a></li>
+                        <li class="mb-2"><a href="/about"><i class="fas fa-info-circle me-1"></i> About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.amazon.com/dp/B0F3S8FQ7C" target="_blank"><i class="fas fa-book me-1"></i> Get the Book</a></li>
+                        <li class="mb-2"><a href="https://www.skool.com/the-quantitative-elite" target="_blank"><i class="fas fa-users me-1"></i> Join the Community</a></li>
+                        <li class="mb-2"><a href="https://www.youtube.com/@KuldeepSinghAlgo" target="_blank"><i class="fab fa-youtube me-1"></i> YouTube Channel</a></li>
+                        <li class="mb-2"><a href="https://github.com/thekuldeepsingh/Stock-Screener-System-" target="_blank"><i class="fab fa-github me-1"></i> GitHub Repository</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-md-0">© {{ current_year }} Multi-Asset Portfolio Management System. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="https://www.youtube.com/@KuldeepSinghAlgo" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/thekuldeepsingh" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.skool.com/the-quantitative-elite" target="_blank"><i class="fas fa-users"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- Additional Scripts -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>

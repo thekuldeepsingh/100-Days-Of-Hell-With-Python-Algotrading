@@ -1,0 +1,227 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Dashboard</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <a href="{{ url_for('reports') }}" class="btn btn-sm btn-outline-secondary">
+                <i class="fas fa-file-export me-1"></i> Generate Report
+            </a>
+        </div>
+        <a href="{{ url_for('add_security') }}" class="btn btn-sm btn-primary">
+            <i class="fas fa-plus me-1"></i> Add Security
+        </a>
+    </div>
+</div>
+
+<!-- Portfolio Summary Cards -->
+<div class="row mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow dashboard-card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <i class="fas fa-wallet fa-3x text-primary"></i>
+                    </div>
+                    <div class="col-9 text-end">
+                        <h6 class="text-uppercase text-muted mb-0">Portfolio Value</h6>
+                        <span class="value">${{ "%.2f"|format(summary.total_value) }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow dashboard-card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <i class="fas fa-money-bill-trend-up fa-3x {% if summary.total_gain_loss >= 0 %}text-success{% else %}text-danger{% endif %}"></i>
+                    </div>
+                    <div class="col-9 text-end">
+                        <h6 class="text-uppercase text-muted mb-0">Total Gain/Loss</h6>
+                        <span class="value {% if summary.total_gain_loss >= 0 %}positive{% else %}negative{% endif %}">
+                            ${{ "%.2f"|format(summary.total_gain_loss) }} 
+                            ({{ "%.2f"|format(summary.total_gain_loss_pct) }}%)
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow dashboard-card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <i class="fas fa-chart-bar fa-3x text-info"></i>
+                    </div>
+                    <div class="col-9 text-end">
+                        <h6 class="text-uppercase text-muted mb-0">Asset Classes</h6>
+                        <span class="value">{{ summary.asset_allocation|length }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow dashboard-card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <i class="fas fa-chart-line fa-3x text-warning"></i>
+                    </div>
+                    <div class="col-9 text-end">
+                        <h6 class="text-uppercase text-muted mb-0">Securities</h6>
+                        <span class="value">{{ summary.securities_count }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Performance Chart -->
+<div class="row mb-4">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow">
+            <div class="card-header bg-transparent border-0 d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Portfolio Performance</h5>
+                <select id="periodSelector" class="form-select form-select-sm w-auto">
+                    <option value="30">Last 30 Days</option>
+                    <option value="90">Last 90 Days</option>
+                    <option value="180">Last 6 Months</option>
+                    <option value="365">Last Year</option>
+                </select>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card border-0 shadow h-100">
+            <div class="card-header bg-transparent border-0">
+                <h5 class="mb-0">Asset Allocation</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="assetAllocationChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Metrics and Recent Securities -->
+<div class="row mb-4">
+    <div class="col-lg-6">
+        <div class="card border-0 shadow">
+            <div class="card-header bg-transparent border-0">
+                <h5 class="mb-0">Portfolio Metrics</h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <h6 class="text-muted">Portfolio Risk Score</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="badge risk-{{ risk.risk_level|replace(' ', '-') }} me-2">
+                                {{ risk.portfolio_risk_score }}
+                            </div>
+                            <span>{{ risk.risk_level }}</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="text-muted">Volatility</h6>
+                        <div>{{ "%.2f"|format(metrics.volatility) }}%</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h6 class="text-muted">Sharpe Ratio</h6>
+                        <div>{{ "%.2f"|format(metrics.sharpe_ratio) }}</div>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="text-muted">Asset Classes</h6>
+                        <div>
+                            {% for asset_class, percentage in summary.asset_allocation.items() %}
+                                <span class="badge asset-{{ asset_class|replace(' ', '-') }} mb-1">{{ asset_class }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h6 class="text-muted">Top Performers</h6>
+                        <ul class="list-group list-group-flush">
+                            {% for security in metrics.top_performers %}
+                                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
+                                    <span>{{ security.ticker }}</span>
+                                    <span class="badge rounded-pill bg-success">{{ "%.2f"|format(security.gain_loss_pct) }}%</span>
+                                </li>
+                            {% else %}
+                                <li class="list-group-item bg-transparent px-0">No securities data available</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-6">
+        <div class="card border-0 shadow">
+            <div class="card-header bg-transparent border-0 d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Recent Securities</h5>
+                <a href="{{ url_for('portfolio') }}" class="btn btn-sm btn-outline-secondary">View All</a>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ticker</th>
+                                <th>Asset Class</th>
+                                <th>Value</th>
+                                <th>Gain/Loss</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for security in latest_securities %}
+                                <tr>
+                                    <td>
+                                        <strong>{{ security.ticker }}</strong><br>
+                                        <small class="text-muted">{{ security.name }}</small>
+                                    </td>
+                                    <td>
+                                        <span class="badge asset-{{ security.asset_class|replace(' ', '-') }}">{{ security.asset_class }}</span>
+                                    </td>
+                                    <td>${{ "%.2f"|format(security.current_value) }}</td>
+                                    <td class="{% if security.gain_loss >= 0 %}positive{% else %}negative{% endif %}">
+                                        ${{ "%.2f"|format(security.gain_loss) }} 
+                                        ({{ "%.2f"|format(security.gain_loss_percentage) }}%)
+                                    </td>
+                                </tr>
+                            {% else %}
+                                <tr>
+                                    <td colspan="4" class="text-center">No securities yet. <a href="{{ url_for('add_security') }}">Add one?</a></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

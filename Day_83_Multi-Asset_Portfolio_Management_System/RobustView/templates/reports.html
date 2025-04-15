@@ -1,0 +1,291 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Portfolio Report</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.print()">
+                <i class="fas fa-print me-1"></i> Print Report
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="report-container pb-6">
+    <!-- Report Header -->
+    <div class="card border-0 shadow mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Portfolio Performance Report</h3>
+                    <p class="text-muted">Generated on: {{ report.generated_at }}</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h4>Total Portfolio Value</h4>
+                    <h2 class="mb-0">${{ "%.2f"|format(report.summary.total_value) }}</h2>
+                    <p class="{% if report.summary.total_gain_loss >= 0 %}positive{% else %}negative{% endif %}">
+                        <i class="fas {% if report.summary.total_gain_loss >= 0 %}fa-arrow-up{% else %}fa-arrow-down{% endif %} me-1"></i>
+                        ${{ "%.2f"|format(report.summary.total_gain_loss) }} 
+                        ({{ "%.2f"|format(report.summary.total_gain_loss_pct) }}%)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Portfolio Summary -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-header bg-transparent border-0">
+                    <h5 class="mb-0">Portfolio Summary</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="text-muted">Risk Profile</h6>
+                            <p>
+                                <span class="badge risk-{{ report.risk.risk_level|replace(' ', '-') }} p-2">
+                                    {{ report.risk.portfolio_risk_score }}
+                                </span>
+                                {{ report.risk.risk_level }}
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="text-muted">Total Securities</h6>
+                            <p>{{ report.summary.securities_count }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="text-muted">Asset Classes</h6>
+                            <p>{{ report.summary.asset_allocation|length }}</p>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="text-muted">Total Cost</h6>
+                            <p>${{ "%.2f"|format(report.summary.total_cost) }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-header bg-transparent border-0">
+                    <h5 class="mb-0">Performance Metrics</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="text-muted">Volatility</h6>
+                            <p>{{ "%.2f"|format(report.metrics.volatility) }}%</p>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="text-muted">Sharpe Ratio</h6>
+                            <p>{{ "%.2f"|format(report.metrics.sharpe_ratio) }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="text-muted">Top Performer</h6>
+                            <p>
+                                {% if report.metrics.top_performers %}
+                                    {{ report.metrics.top_performers[0].ticker }} 
+                                    <span class="badge rounded-pill bg-success">{{ "%.2f"|format(report.metrics.top_performers[0].gain_loss_pct) }}%</span>
+                                {% else %}
+                                    N/A
+                                {% endif %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Performance Chart -->
+    <div class="card border-0 shadow mb-4">
+        <div class="card-header bg-transparent border-0">
+            <h5 class="mb-0">Portfolio Performance</h5>
+        </div>
+        <div class="card-body">
+            <div class="chart-container">
+                <canvas id="performanceChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Asset Allocation -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-header bg-transparent border-0">
+                    <h5 class="mb-0">Asset Allocation</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="assetAllocationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-header bg-transparent border-0">
+                    <h5 class="mb-0">Sector Allocation</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="sectorAllocationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Securities Table -->
+    <div class="card border-0 shadow mb-4">
+        <div class="card-header bg-transparent border-0">
+            <h5 class="mb-0">Holdings Detail</h5>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Security</th>
+                            <th>Asset Class</th>
+                            <th>Purchase Date</th>
+                            <th>Purchase Price</th>
+                            <th>Current Price</th>
+                            <th>Quantity</th>
+                            <th>Current Value</th>
+                            <th>Gain/Loss</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for security in report.securities %}
+                            <tr>
+                                <td>
+                                    <strong>{{ security.ticker }}</strong><br>
+                                    <small class="text-muted">{{ security.name }}</small>
+                                </td>
+                                <td>
+                                    <span class="badge asset-{{ security.asset_class|replace(' ', '-') }}">{{ security.asset_class }}</span>
+                                    {% if security.sector %}
+                                        <br><small class="text-muted">{{ security.sector }}</small>
+                                    {% endif %}
+                                </td>
+                                <td>{{ security.purchase_date }}</td>
+                                <td>${{ "%.2f"|format(security.purchase_price) }}</td>
+                                <td>${{ "%.2f"|format(security.current_price) }}</td>
+                                <td>{{ "%.2f"|format(security.quantity) }}</td>
+                                <td>${{ "%.2f"|format(security.current_value) }}</td>
+                                <td class="{% if security.gain_loss >= 0 %}positive{% else %}negative{% endif %}">
+                                    ${{ "%.2f"|format(security.gain_loss) }}
+                                    ({{ "%.2f"|format(security.gain_loss_pct) }}%)
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="8" class="text-center">No securities in your portfolio yet.</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Top and Bottom Performers -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card border-0 shadow">
+                <div class="card-header bg-transparent border-0">
+                    <h5 class="mb-0">Top Performers</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Security</th>
+                                    <th>Asset Class</th>
+                                    <th>Gain/Loss (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for security in report.metrics.top_performers %}
+                                    <tr>
+                                        <td>{{ security.ticker }}</td>
+                                        <td>{{ security.asset_class }}</td>
+                                        <td class="positive">{{ "%.2f"|format(security.gain_loss_pct) }}%</td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="3" class="text-center">No data available</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 shadow">
+                <div class="card-header bg-transparent border-0">
+                    <h5 class="mb-0">Bottom Performers</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Security</th>
+                                    <th>Asset Class</th>
+                                    <th>Gain/Loss (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for security in report.metrics.bottom_performers %}
+                                    <tr>
+                                        <td>{{ security.ticker }}</td>
+                                        <td>{{ security.asset_class }}</td>
+                                        <td class="negative">{{ "%.2f"|format(security.gain_loss_pct) }}%</td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="3" class="text-center">No data available</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Report Footer -->
+    <div class="card border-0 shadow">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Disclaimer</h5>
+                    <p class="text-muted small">
+                        This report is for informational purposes only and does not constitute investment advice. 
+                        Past performance is not indicative of future results. The information contained in this 
+                        report is based on data entered into the system and may not reflect actual market values.
+                        Always consult with a qualified financial advisor before making investment decisions.
+                    </p>
+                    <p class="text-muted small text-center mt-3">
+                        Portfolio Management System Report | Generated on {{ report.generated_at }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

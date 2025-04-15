@@ -1,0 +1,214 @@
+{% extends "layout.html" %}
+
+{% block title %}Watchlist - Multi-Asset Portfolio Management System{% endblock %}
+
+{% block head %}
+<style>
+    .security-card {
+        transition: all 0.3s ease;
+        border-radius: 0.75rem;
+        overflow: hidden;
+    }
+    .security-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    }
+    .security-header {
+        padding: 1rem;
+        background-color: #f8fafc;
+    }
+    .badge-asset-class {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h2 mb-0">Investment Watchlist</h1>
+        <div>
+            <a href="/add-security" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Add to Watchlist
+            </a>
+        </div>
+    </div>
+    
+    <!-- Watchlist Overview -->
+    <div class="card mb-5">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0"><i class="fas fa-eye me-2"></i>Watchlist Overview</h2>
+            <div>
+                <button class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-sort me-1"></i> Sort
+                </button>
+                <button class="btn btn-sm btn-outline-secondary ms-2">
+                    <i class="fas fa-filter me-1"></i> Filter
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Ticker</th>
+                            <th>Name</th>
+                            <th>Asset Class</th>
+                            <th>Sector</th>
+                            <th>Current Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for security in watchlist %}
+                        <tr>
+                            <td><strong>{{ security.ticker }}</strong></td>
+                            <td>{{ security.name }}</td>
+                            <td><span class="badge bg-light text-dark">{{ security.asset_class }}</span></td>
+                            <td>{{ security.sector }}</td>
+                            <td>{{ security.current_price|currency }}</td>
+                            <td>
+                                <button class="btn btn-sm btn-success me-1">
+                                    <i class="fas fa-plus"></i> Add to Portfolio
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Complementary Securities -->
+    <h2 class="h4 mb-3">Portfolio Enhancement Opportunities</h2>
+    <div class="card mb-5">
+        <div class="card-header">
+            <h2 class="h5 mb-0"><i class="fas fa-puzzle-piece me-2"></i>Complementary Securities (New Sectors)</h2>
+        </div>
+        <div class="card-body">
+            {% if complementary_securities %}
+            <p class="mb-4">These securities would add new sectors to your portfolio, potentially improving diversification:</p>
+            <div class="row g-4">
+                {% for security in complementary_securities %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="card security-card h-100">
+                        <div class="security-header">
+                            <h3 class="h5 mb-0">{{ security.ticker }}</h3>
+                            <span class="badge bg-primary badge-asset-class">{{ security.asset_class }}</span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="h6">{{ security.name }}</h4>
+                            <p class="text-muted small mb-3">{{ security.description }}</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-light text-dark">{{ security.sector }}</span>
+                                <span class="fw-bold">{{ security.current_price|currency }}</span>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-sm btn-outline-success">
+                                    <i class="fas fa-plus me-1"></i> Add to Portfolio
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle me-2"></i> No complementary securities found in your watchlist. Consider adding securities from sectors not currently in your portfolio.
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Similar Sector Securities -->
+    <div class="card mb-5">
+        <div class="card-header">
+            <h2 class="h5 mb-0"><i class="fas fa-layer-group me-2"></i>Similar Sector Securities</h2>
+        </div>
+        <div class="card-body">
+            {% if similar_sector_securities %}
+            <p class="mb-4">These securities are in sectors where you already have investments:</p>
+            
+            <div class="accordion" id="accordionSectors">
+                {% for sector, securities in similar_sector_securities.items() %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading{{ loop.index }}">
+                        <button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="collapse{{ loop.index }}">
+                            <i class="fas fa-building me-2"></i> {{ sector }}
+                            <span class="badge bg-primary ms-2">{{ securities|length }}</span>
+                        </button>
+                    </h2>
+                    <div id="collapse{{ loop.index }}" class="accordion-collapse collapse {% if loop.first %}show{% endif %}" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#accordionSectors">
+                        <div class="accordion-body">
+                            <div class="row g-4">
+                                {% for security in securities %}
+                                <div class="col-md-6">
+                                    <div class="card security-card h-100">
+                                        <div class="security-header">
+                                            <h3 class="h5 mb-0">{{ security.ticker }}</h3>
+                                            <span class="badge bg-primary badge-asset-class">{{ security.asset_class }}</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="h6">{{ security.name }}</h4>
+                                            <p class="text-muted small mb-3">{{ security.description }}</p>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="badge bg-light text-dark">{{ sector }}</span>
+                                                <span class="fw-bold">{{ security.current_price|currency }}</span>
+                                            </div>
+                                            <div class="d-grid">
+                                                <button class="btn btn-sm btn-outline-success">
+                                                    <i class="fas fa-plus me-1"></i> Add to Portfolio
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle me-2"></i> No similar sector securities found in your watchlist.
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-primary">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <i class="fas fa-lightbulb fa-2x"></i>
+                    </div>
+                    <div>
+                        <h5>Watchlist Management Tips</h5>
+                        <p class="mb-0">A well-maintained watchlist can help you spot opportunities and improve portfolio diversification. Consider reviewing market news, analyst ratings, and fundamental metrics before adding securities to your portfolio. Learn more about effective watchlist strategies in <a href="https://www.amazon.com/dp/B0F3S8FQ7C" target="_blank">Practical Python for Effective Algorithmic Trading</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-12 text-center">
+            <p>Want to learn advanced portfolio management techniques?</p>
+            <a href="https://www.skool.com/the-quantitative-elite" class="btn btn-outline-primary" target="_blank">
+                <i class="fas fa-users me-1"></i> Join The Quantitative Elite Community
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
