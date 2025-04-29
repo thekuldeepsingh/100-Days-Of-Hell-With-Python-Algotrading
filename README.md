@@ -7,7 +7,7 @@
 ![Progress](https://img.shields.io/badge/Progress-83%25-brightgreen.svg)
 
 <p align="center">
-  <img src="https://i.imgur.com/your-banner-image.png" alt="100 Days Of Hell With Python Algotrading" width="800">
+  <img src="https://www.amazon.com/dp/B0F3S8FQ7C" alt="100 Days Of Hell With Python Algotrading" width="800">
 </p>
 
 An intensive, structured 100-day journey to mastering algorithmic trading with Python. This repository contains comprehensive code, projects, and resources from beginner Python fundamentals to advanced trading systems and machine learning models for financial markets.
@@ -181,11 +181,6 @@ Supplement your learning with video tutorials on our [YouTube Channel](https://w
 - Software developers entering the fintech space
 - Anyone fascinated by the intersection of finance and technology
 
-## 💬 Testimonials
-
-> "This 100-day journey took me from barely knowing Python to building a full trading system that I now use for my personal investments. The structured approach and real-world projects made all the difference." – *Alex M.*
-
-> "As someone with a finance background but minimal coding experience, this repository was exactly what I needed. The progression is perfect, and the projects are directly applicable to my work." – *Sarah K.*
 
 ## 📝 License
 
