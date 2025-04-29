@@ -7,7 +7,12 @@
 ![Progress](https://img.shields.io/badge/Progress-83%25-brightgreen.svg)
 
 <p align="center">
-  <img src="https://www.amazon.com/dp/B0F3S8FQ7C" alt="100 Days Of Hell With Python Algotrading" width="800">
+  <a href="https://www.youtube.com/@KuldeepSinghAlgo" alt="100 Days Of Hell With Python Algotrading" width="800">
+</p>
+<p align="center">
+  <a href="https://www.skool.com/the-quantitative-elite">Join our community</a> •
+  <a href="https://www.youtube.com/@KuldeepSinghAlgo">YouTube Channel</a> •
+  <a href="https://www.amazon.com/dp/B0F3S8FQ7C">Get the Book</a>
 </p>
 
 An intensive, structured 100-day journey to mastering algorithmic trading with Python. This repository contains comprehensive code, projects, and resources from beginner Python fundamentals to advanced trading systems and machine learning models for financial markets.
