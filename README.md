@@ -10,7 +10,7 @@
   <a href="https://www.youtube.com/@KuldeepSinghAlgo" alt="100 Days Of Hell With Python Algotrading" width="800">
 </p>
 <p align="center">
-  <a href="https://www.skool.com/the-quantitative-elite">Join our community</a> •
+  <a href="https://www.skool.com/the-quantitative-elite-1670">Join our community</a> •
   <a href="https://www.youtube.com/@KuldeepSinghAlgo">YouTube Channel</a> •
   <a href="https://www.amazon.com/dp/B0F3S8FQ7C">Get the Book</a>
 </p>
