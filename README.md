@@ -7,10 +7,10 @@
 ![Progress](https://img.shields.io/badge/Progress-83%25-brightgreen.svg)
 
 <p align="center">
-  <a href="[https://www.youtube.com/@KuldeepSinghAlgo](https://www.youtube.com/redirect?event=channel_description&redir_token=QUM4Zm9rVHVQVTBiMEpJelVzTjkwYXgwQnhON3xBR3JiS2FsSFl3SFdZV0FfX3l1b0ZVbXBDajRwY2JiSjVUREU5WjkyWWZMYXNJQ180OUgzbmllQWMwRmJhdWhuUk4zT1doOWJlUGh4QjlYVVI2bTdJVWR1NXpDcFdYTzJaQzlU&q=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-algorithmic-quantitative-trading%2F%3FreferralCode%3DDEB3B9697A7E3B49B7D8)" alt="100 Days Of Hell With Python Algotrading" width="800">
+  <a href="https://www.udemy.com/course/python-algorithmic-quantitative-trading/?referralCode=DEB3B9697A7E3B49B7D8" alt="100 Days Of Hell With Python Algotrading" width="800">
 </p>
 <p align="center">
-  <a href="https://www.skool.com/the-quantitative-elite-1670">Top Rated Algorithmic Trading Udemy Course</a> •
+  <a href="https://www.udemy.com/course/python-algorithmic-quantitative-trading/?referralCode=DEB3B9697A7E3B49B7D8">Top Rated Algorithmic Trading Udemy Course</a> •
   <a href="https://www.skool.com/the-quantitative-elite-1670">Join our community</a> •
   <a href="https://www.youtube.com/@KuldeepSinghAlgo">YouTube Channel</a> •
   <a href="https://www.amazon.com/dp/B0F3S8FQ7C">Get the Book</a>
